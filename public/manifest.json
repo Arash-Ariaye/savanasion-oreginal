@@ -1,0 +1,47 @@
+{
+    "name": "Savana Farms Manager",
+    "short_name": "SFM",
+    "start_url": "login",
+    "background_color": "#6777ef",
+    "description": "مدیریت مرغداری ها",
+    "display": "fullscreen",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "pwa/poultry-16.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "purpose": "any"
+        },{
+            "src": "pwa/poultry-24.png",
+            "sizes": "24x24",
+            "type": "image/png",
+            "purpose": "any"
+        },{
+            "src": "pwa/poultry-32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        },{
+            "src": "pwa/poultry-64.png",
+            "sizes": "64x64",
+            "type": "image/png",
+            "purpose": "any"
+        },{
+            "src": "pwa/poultry-128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any"
+        },{
+            "src": "pwa/poultry-256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any"
+        },{
+            "src": "pwa/poultry-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
