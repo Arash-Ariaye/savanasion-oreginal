@@ -110,7 +110,7 @@
                                     <td>{{ $item->tarikh_start }}</td>
                                     <td>{{ $item->dr }}</td>
                                     <td>{{ $item->expert }}</td>
-                                    <td>{{ \App\Http\Help::age($item->tarikh_start) }}</td>
+                                    <td>{{ $help->age($item->tarikh_start) }}</td>
                                     <td>
                                         <div class="dropdown mb-auto">
                                             <div class="btn-link" role="button" data-toggle="dropdown"

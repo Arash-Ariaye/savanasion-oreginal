@@ -568,7 +568,8 @@
                                                 واکسن:
                                             </label>
                                             <div class="col-lg-8">
-                                                <textarea type="text" class="form-control" rows="4" name="vaksan">{{ old('vaksan') }}</textarea>
+                                                <textarea type="text" class="form-control" rows="4"
+                                                          name="vaksan">{{ old('vaksan') }}</textarea>
                                                 @error('vaksan')
                                                 <span class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
@@ -610,7 +611,7 @@
             if (id <= breeder) {
                 document.getElementById(id).hidden = false;
                 id++;
-                if(id >= breeder){
+                if (id >= breeder) {
                     document.getElementById('add').hidden = true;
                 }
             }

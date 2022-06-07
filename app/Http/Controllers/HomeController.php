@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Help;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -22,7 +23,8 @@ class HomeController extends Controller
             'experts' => DB::table('experts')->count(),
             'farms' => DB::table('farms')->count(),
             'periods' => DB::table('periods')->where('status', 1),
-            'dailyReport' => DB::table('daily_reports')->limit(6)->get()
+            'dailyReport' => DB::table('daily_reports')->limit(6)->get(),
+            'help' => new Help(),
         ];
         return view('home', $data);
     }

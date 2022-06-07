@@ -91,6 +91,7 @@ class PeriodController extends Controller
             'title' => 'دوره های جاری',
             'periods' => Period::where('status', 1)->get(),
             'now' => new DateTime(Verta()),
+            'help' => new Help(),
         ];
 
         return view('period.periods', $data);
@@ -102,8 +103,10 @@ class PeriodController extends Controller
             'title' => 'دوره های خاتمه یافته',
             'periods' => Period::where('status', 0)->get(),
             'now' => new DateTime(Verta()),
+            'help' => new Help(),
         ];
 
+        return view('period.end-periods', $data);
 
     }
 
