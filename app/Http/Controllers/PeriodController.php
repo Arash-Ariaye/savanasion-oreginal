@@ -30,6 +30,17 @@ class PeriodController extends Controller
         return view('period.start-period', $data);
     }
 
+    public function end_period_index()
+    {
+        $data = [
+            'title' => 'گزارش پایان دوره',
+            'categories' => Category::all(),
+            'breeder' => Period::where('status', 1)->get(),
+
+        ];
+        return view('period.end-period', $data);
+    }
+
 
     public function create(Period $period, Request $request)
     {
@@ -149,21 +160,19 @@ class PeriodController extends Controller
     }
 
 
-    public function add_end(Request $request, Period $period)
+    public function create_end_period(Request $request)
     {
         $check = $request->validate([
-            'tarikh_end' => 'nullable',
-            'cat_end' => 'nullable',
-            'sen_gale_madar' => 'required',
-            'azmayesh_ab' => 'nullable',
-            'darsad_talafat' => 'nullable',
-            'dan_baghimande' => 'nullable',
-            'v_morgh_tah_salon' => 'nullable',
-            't_morgh_tah_salon' => 'nullable',
+            'tarikh_end' => 'required',
+            'breeder' => '',
+            'cat_end' => 'required',
+            'dan_baghimande' => 'required|numeric',
+            'v_morgh_tah_salon' => 'required|numeric',
+            't_morgh_tah_salon' => 'required|numeric',
         ], [
             '*.required' => 'حتما مقداری وارد کنید.'
         ]);
-
+        dd($check);
     }
 
 

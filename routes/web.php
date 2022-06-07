@@ -92,10 +92,11 @@ Route::delete('destroy-expert/{expert}', [ExpertController::class, 'destroy'])->
 Route::get('periods', [PeriodController::class, 'show'])->name('periods')->middleware('auth');
 Route::get('report-period/{tarikh_start}/{breeder}', [PeriodController::class, 'report'])->name('report-period')->middleware('auth');
 Route::get('start-period', [PeriodController::class, 'index'])->name('add-period')->middleware('auth');
+Route::get('end-period', [PeriodController::class, 'end_period_index'])->name('end-period')->middleware('auth');
 Route::post('create-period', [PeriodController::class, 'create'])->name('create-period')->middleware('auth');
+Route::put('create-end-period', [PeriodController::class, 'create_end_period'])->name('create-end-period')->middleware('auth');
 Route::get('edit-start-period/{period}', [PeriodController::class, 'editStart'])->name('edit-start-period')->middleware('auth');
 Route::put('update-start-period/{period}', [PeriodController::class, 'update_start'])->name('update-start-period')->middleware('auth');
-Route::put('update-end-period/{period}', [PeriodController::class, 'update_end'])->name('update-end-period')->middleware('auth');
 Route::delete('destroy-period/{period}', [PeriodController::class, 'destroy'])->name('destroy-period')->middleware('auth');
 
 //گزارش روزانه------------------------------//

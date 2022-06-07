@@ -43,8 +43,7 @@
                 <ul aria-expanded="false">
                     <li><a href="{{ route('add-period') }}">شروع دوره</a></li>
                     <li><a href="{{ route('add-daily-report') }}">گزارش روزانه</a></li>
-                    <li><a href="#">گزارش هفتگی</a></li>
-                    <li><a href="#">پایان دوره</a></li>
+                    <li><a href="{{ route('end-period') }}">پایان دوره</a></li>
 
                 </ul>
             </li>
@@ -61,7 +60,6 @@
                 <ul aria-expanded="false">
                     <li><a href="{{ route('periods') }}">شروع دوره</a></li>
                     <li><a href="{{ route('daily-reports') }}">گزارش روزانه</a></li>
-                    <li><a href="#">گزارش هفتگی</a></li>
                     <li><a href="#">پایان دوره</a></li>
                 </ul>
             </li>

@@ -43,7 +43,6 @@ class CreatePeriodsTable extends Migration
             $table->string('sln');
 
             $table->string('azmayesh_ab')->nullable();
-            $table->string('darsad_talafat')->nullable();
             $table->string('dan_baghimande')->nullable();
             $table->string('v_morgh_tah_salon')->nullable();
             $table->string('t_morgh_tah_salon')->nullable();
