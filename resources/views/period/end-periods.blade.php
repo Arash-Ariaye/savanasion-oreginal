@@ -10,10 +10,10 @@
 {{--جزیات صفحه در این سکشن قرار گیرد--}}
 @section('content')
     <div class="page-titles">
-        <h4>لیست دوره های جاری</h4>
+        <h4>لیست دوره های خاتمه یافته</h4>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javascript:void(0)">مدیریت گزارشات</a></li>
-            <li class="breadcrumb-item active"><a href="javascript:void(0)">شروع دوره</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">پایان دوره</a></li>
         </ol>
     </div>
     <!-- row -->
@@ -77,8 +77,8 @@
                                                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(24px, 24px, 0px);"
                                                  x-out-of-boundaries="">
                                                 <a class="dropdown-item"
-                                                   href="{{ route('add-daily-report', $item->id) }}">افزودن گزارش
-                                                    روزانه</a>
+                                                   href="{{ route('report-period', [$item->tarikh_start, $item->breeder]) }}">نمایش
+                                                    گزارش</a>
                                                 @if($item->status == 0)
                                                     <form method="post" action="{{ route('undo-end-period', $item->id) }}">
                                                         @csrf
@@ -87,16 +87,8 @@
                                                             جاری کردن دوره
                                                         </button>
                                                     </form>
-
                                                 @endif
-                                                <a class="dropdown-item"
-                                                   href="{{ route('edit-start-period', $item->id) }}">ویرایش شروع
-                                                    دوره</a>
-                                                <a class="dropdown-item"
-                                                   href="{{ route('report-period', [$item->tarikh_start, $item->breeder]) }}">نمایش
-                                                    گزارش</a>
-                                                <a class="dropdown-item"
-                                                   href="{{ route('end-period', $item->id) }}">ثبت پایان دوره</a>
+
 
                                                 <form action="{{ route('destroy-period', $item->id) }}" method="post">
                                                     @csrf

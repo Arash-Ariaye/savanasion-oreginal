@@ -24,6 +24,7 @@
                 <div class="form-validation">
                     <form class="form-valide" action="{{ route('create-end-period') }}" method="post">
                         @csrf
+                        @method('PUT')
                         @if($errors->any())
                             @foreach($errors as $error)
                                 @error($error)<span class="text-danger"> {{ $message }}</span> @enderror
@@ -62,16 +63,16 @@
                                 <label class="col-form-label">
                                     مرغدار:
                                 </label>
-                                <select name="breeder" style="text-align: left; direction: ltr;"
+                                <select name="period" style="text-align: left; direction: ltr;"
                                         class="form-control">
-                                    @if(old('breeder'))
-                                        <option value="{{old('breeder')}}">{{old('breeder')}}</option>
+                                    @if(old('period'))
+                                        <option value="{{old('period')}}">{{old('period')}}</option>
                                     @endif
-                                    @foreach($breeder as $item)
-                                        <option value="{{$item->breeder}}"> {{$item->breeder}}</option>
+                                    @foreach($period as $item)
+                                        <option value="{{$item->id}}"> {{$item->breeder}}</option>
                                     @endforeach
                                 </select>
-                                @error('breeder') <span class="text-danger"> {{ $message }}</span> @enderror
+                                @error('period') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
                         </div>
                         <div class="row">

@@ -35,7 +35,7 @@ class PeriodController extends Controller
         $data = [
             'title' => 'گزارش پایان دوره',
             'categories' => Category::all(),
-            'breeder' => Period::where('status', 1)->get(),
+            'period' => Period::where('status', 1)->get(),
 
         ];
         return view('period.end-period', $data);
@@ -88,14 +88,24 @@ class PeriodController extends Controller
     public function show(Period $period)
     {
         $data = [
-            'title' => '',
-            'periods' => Period::all(),
+            'title' => 'دوره های جاری',
+            'periods' => Period::where('status', 1)->get(),
             'now' => new DateTime(Verta()),
         ];
 
         return view('period.periods', $data);
     }
 
+    public function end_periods()
+    {
+        $data = [
+            'title' => 'دوره های خاتمه یافته',
+            'periods' => Period::where('status', 0)->get(),
+            'now' => new DateTime(Verta()),
+        ];
+
+
+    }
 
     public function editStart(Period $period, Request $request)
     {
@@ -145,7 +155,6 @@ class PeriodController extends Controller
             '*.required' => 'حتما مقداری وارد کنید.'
         ]);
 
-
         try {
 
             $period->update($check);
@@ -160,11 +169,11 @@ class PeriodController extends Controller
     }
 
 
-    public function create_end_period(Request $request)
+    public function create_end_period(Request $request, Period $period = null)
     {
         $check = $request->validate([
             'tarikh_end' => 'required',
-            'breeder' => '',
+            'period' => 'required',
             'cat_end' => 'required',
             'dan_baghimande' => 'required|numeric',
             'v_morgh_tah_salon' => 'required|numeric',
@@ -172,7 +181,43 @@ class PeriodController extends Controller
         ], [
             '*.required' => 'حتما مقداری وارد کنید.'
         ]);
-        dd($check);
+        try {
+            $update = Period::find($check['period']);
+            $update->update([
+                'tarikh_end' => $check['tarikh_end'],
+                'cat_end' => $check['cat_end'],
+                'dan_baghimande' => $check['dan_baghimande'],
+                'v_morgh_tah_salon' => $check['v_morgh_tah_salon'],
+                't_morgh_tah_salon' => $check['t_morgh_tah_salon'],
+                'status' => 0
+            ]);
+            toastr()->success('با موفقیت ثبت شد.');
+            return redirect()->route('periods');
+        } catch (\Exception $e) {
+            toastr()->error('خطا در ذخیره سازی.');
+            return redirect()->back();
+        }
+    }
+
+
+    public function undo_end_period(Request $request, Period $period)
+    {
+
+        try {
+            $period->update([
+                'tarikh_end' => null,
+                'cat_end' => null,
+                'dan_baghimande' => null,
+                'v_morgh_tah_salon' => null,
+                't_morgh_tah_salon' => null,
+                'status' => 1
+            ]);
+            toastr()->success('دوره با موفقیت جاری شد.');
+            return redirect()->route('periods');
+        } catch (\Exception $e) {
+            toastr()->error('خطا در ذخیره سازی.');
+            return redirect()->back();
+        }
     }
 
 
@@ -198,29 +243,29 @@ class PeriodController extends Controller
             'period' => Period::where('breeder', $request['breeder'])->where('tarikh_start', $request['tarikh_start'])->get(),
             'dailyReports' => $d_R,
             'tTalafat' => $tTalafat = Help::sumReport(
-            $d_R->sum('t_talafat_s1'),
-            $d_R->sum('t_talafat_s2'),
-            $d_R->sum('t_talafat_s3'),
-            $d_R->sum('t_talafat_s4'),
-            $d_R->sum('t_talafat_s5'),
-            $d_R->sum('t_talafat_s6')
-        ),
+                $d_R->sum('t_talafat_s1'),
+                $d_R->sum('t_talafat_s2'),
+                $d_R->sum('t_talafat_s3'),
+                $d_R->sum('t_talafat_s4'),
+                $d_R->sum('t_talafat_s5'),
+                $d_R->sum('t_talafat_s6')
+            ),
             'vTalafat' => $vTalafat = Help::sumReport(
-            $d_R->sum('v_talafat_s1'),
-            $d_R->sum('v_talafat_s2'),
-            $d_R->sum('v_talafat_s3'),
-            $d_R->sum('v_talafat_s4'),
-            $d_R->sum('v_talafat_s5'),
-            $d_R->sum('v_talafat_s6')
-        ),
+                $d_R->sum('v_talafat_s1'),
+                $d_R->sum('v_talafat_s2'),
+                $d_R->sum('v_talafat_s3'),
+                $d_R->sum('v_talafat_s4'),
+                $d_R->sum('v_talafat_s5'),
+                $d_R->sum('v_talafat_s6')
+            ),
             'danMasrafi' => $danMasrafi = Help::sumReport(
-            $d_R->sum('dan_masrafi_s1'),
-            $d_R->sum('dan_masrafi_s2'),
-            $d_R->sum('dan_masrafi_s3'),
-            $d_R->sum('dan_masrafi_s4'),
-            $d_R->sum('dan_masrafi_s5'),
-            $d_R->sum('dan_masrafi_s6')
-        ),
+                $d_R->sum('dan_masrafi_s1'),
+                $d_R->sum('dan_masrafi_s2'),
+                $d_R->sum('dan_masrafi_s3'),
+                $d_R->sum('dan_masrafi_s4'),
+                $d_R->sum('dan_masrafi_s5'),
+                $d_R->sum('dan_masrafi_s6')
+            ),
             'chTalafat' => $tTalafatch->build($request['tarikh_start'], $request['breeder']),
             'chvTalafat' => $vTalafatch->build($request['tarikh_start'], $request['breeder']),
 

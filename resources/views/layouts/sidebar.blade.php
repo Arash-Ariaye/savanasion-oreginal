@@ -58,7 +58,8 @@
                     <span class="nav-text">مدیریت گزارشات</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ route('periods') }}">شروع دوره</a></li>
+                    <li><a href="{{ route('periods') }}">دوره های جاری</a></li>
+                    <li><a href="{{ route('end-periods') }}">دوره های خاتمه یافته</a></li>
                     <li><a href="{{ route('daily-reports') }}">گزارش روزانه</a></li>
                     <li><a href="#">پایان دوره</a></li>
                 </ul>
