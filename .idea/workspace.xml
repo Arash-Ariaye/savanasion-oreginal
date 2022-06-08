@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-18 01">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-18 02">
       <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +202,7 @@
       <workItem from="1654598200540" duration="2322000" />
       <workItem from="1654600575309" duration="265000" />
       <workItem from="1654600884500" duration="5324000" />
-      <workItem from="1654672276324" duration="2484000" />
+      <workItem from="1654672276324" duration="2784000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654674401507</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update 1400-03-18 02">
+      <created>1654674799021</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654674799021</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +273,8 @@
     <MESSAGE value="update 1400-03-17 03" />
     <MESSAGE value="update 1400-03-17 04" />
     <MESSAGE value="update 1400-03-18 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-18 01" />
+    <MESSAGE value="update 1400-03-18 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-18 02" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
