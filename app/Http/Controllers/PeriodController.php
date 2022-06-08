@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Charts\Talafat;
 use App\Charts\vTalafat;
-use App\Http\Help;
 use App\Models\Breeder;
 use App\Models\Category;
 use App\Models\DailyReport;
@@ -13,7 +12,7 @@ use App\Models\Expert;
 use App\Models\Period;
 use DateTime;
 use Illuminate\Http\Request;
-
+use App\Http\Help;
 class PeriodController extends Controller
 {
 
@@ -245,7 +244,7 @@ class PeriodController extends Controller
             'title' => 'گزارش گیری از دوره',
             'period' => Period::where('breeder', $request['breeder'])->where('tarikh_start', $request['tarikh_start'])->get(),
             'dailyReports' => $d_R,
-            'tTalafat' => $tTalafat = Help::sumReport(
+            'tTalafat' => (new \App\Http\Help)->sumReport(
                 $d_R->sum('t_talafat_s1'),
                 $d_R->sum('t_talafat_s2'),
                 $d_R->sum('t_talafat_s3'),
@@ -253,7 +252,7 @@ class PeriodController extends Controller
                 $d_R->sum('t_talafat_s5'),
                 $d_R->sum('t_talafat_s6')
             ),
-            'vTalafat' => $vTalafat = Help::sumReport(
+            'vTalafat' => (new \App\Http\Help)->sumReport(
                 $d_R->sum('v_talafat_s1'),
                 $d_R->sum('v_talafat_s2'),
                 $d_R->sum('v_talafat_s3'),
@@ -261,7 +260,7 @@ class PeriodController extends Controller
                 $d_R->sum('v_talafat_s5'),
                 $d_R->sum('v_talafat_s6')
             ),
-            'danMasrafi' => $danMasrafi = Help::sumReport(
+            'danMasrafi' => (new \App\Http\Help)->sumReport(
                 $d_R->sum('dan_masrafi_s1'),
                 $d_R->sum('dan_masrafi_s2'),
                 $d_R->sum('dan_masrafi_s3'),

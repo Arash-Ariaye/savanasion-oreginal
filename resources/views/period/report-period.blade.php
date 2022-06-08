@@ -15,7 +15,7 @@
     </div>
     <!-- row -->
     <div class="row col-lg-12 justify-content-center">
-        <div class="col-xl-4 col-lg-12 col-sm-12">
+        <div class="col-lg-12 col-sm-12">
             <div class="card">
                 <div class="card-header border-0 pb-0">
                     <h1 class="card-title m-auto"> {{ $period[0]->breeder }} </h1>
@@ -41,7 +41,7 @@
                         </li>
                         <li class="list-group-item d-flex px-0 justify-content-between">
                             <strong>درصد  تلفات دوره:</strong>
-                            <span class="mb-0"> {{ $tTalafat / $period[0]->t_joje * 100 }} </span>
+                            <span class="mb-0"> {{ substr($tTalafat / $period[0]->t_joje * 100, 0, 4) }} </span>
                         </li>
                         <li class="list-group-item d-flex px-0 justify-content-between">
                             <strong>وزن تلفات دوره:</strong>
@@ -85,7 +85,7 @@
                             class="mb-0">تعداد تلفات :</span><strong>
                             {{ $dailyReports->sum('t_talafat_s1') }} </strong></li>
                     <li class="list-group-item d-flex justify-content-between"><span
-                            class="mb-0">درصد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s1') / $period[0]->t_joje_s1 * 100 }}</strong>
+                            class="mb-0">درصد تلفات :</span><strong>  {{ substr($dailyReports->sum('t_talafat_s1') / $period[0]->t_joje_s1 * 100, 0, 4) }}</strong>
                     </li>
                     <li class="list-group-item d-flex justify-content-between"><span
                             class="mb-0">وزن تلفات:</span><strong>  {{ $dailyReports->sum('v_talafat_s1') }} </strong></li>
@@ -111,7 +111,7 @@
                             class="mb-0">تعداد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s2') }}</strong>
                     </li>
                     <li class="list-group-item d-flex justify-content-between"><span
-                            class="mb-0">درصد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s2') / $period[0]->t_joje_s2 * 100 }}</strong>
+                            class="mb-0">درصد تلفات :</span><strong>  {{ substr($dailyReports->sum('t_talafat_s2') / $period[0]->t_joje_s2 * 100, 0, 4) }}</strong>
                     </li>
                     <li class="list-group-item d-flex justify-content-between"><span
                             class="mb-0">وزن تلفات:</span><strong>  {{ $dailyReports->sum('v_talafat_s2') }} </strong></li>

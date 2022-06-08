@@ -584,6 +584,52 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="card mt-5 shadow shadow-sm">
+                        <div class="card-header">
+                            <h4 class="card-title">ارسالی به کشتارگاه</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-validation">
+                                <div class="row col-lg-12 mt-5">
+                                    <div class="form-group col-lg-6">
+                                        <label class="col-lg-12 col-form-label">
+                                            تعداد مرغ ارسالی به کشتارگاه:
+                                        </label>
+                                        <div class="col-lg-6 col-md-12">
+                                            <input disabled type="text" class="form-control"
+                                                   value="{{ old('t_send_koshtargah') ?? $report->t_send_koshtargah}}"
+                                                   name="t_send_koshtargah">
+                                            @error('t_send_koshtargah') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label class="col-lg-12 col-form-label">
+                                            میانگین وزن ارسالی به کشتارگاه:
+                                        </label>
+                                        <div class="col-lg-6 col-md-12">
+                                            <input disabled type="text" class="form-control"
+                                                   name="avr_v_koshtar" value="{{ old('avr_v_koshtar') ?? $report->avr_v_koshtar}}">
+                                            @error('avr_v_koshtar') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label class="col-lg-12 col-form-label">
+                                        توضیحات:
+                                    </label>
+                                    <div class="col-lg-12">
+                                                <textarea disabled type="text" class="form-control" rows="6"
+                                                          name="description">{{ old('description') ?? $report->description}}</textarea>
+                                        @error('description') <span
+                                            class="text-danger"> {{ $message }}</span> @enderror
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

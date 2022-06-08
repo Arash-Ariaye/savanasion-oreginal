@@ -15,7 +15,7 @@
         </ol>
     </div>
     <!-- row -->
-    <div class="col-xl-12">
+    <div class="col-lg-12">
         <div class="card">
             <div class="card-header">
                 <h4 class="card-title">افزودن گزارش روزانه</h4>
@@ -30,9 +30,9 @@
                             @endforeach
                         @endif
                         <div class="row col-lg-12 justify-content-lg-between">
-                            <div class="col-md-4 p-2">
+                            <div class="col-lg-4 p-2">
                                 <label class="col-lg-12 col-form-label">تاریخ گزارش:</label>
-                                <div class="input-group col-lg-8">
+                                <div class="input-group col-lg-12">
                                     <div class="input-group-prepend">
                                             <span class="input-group-text">
                                                 <i class="fa fa-calendar"></i>
@@ -44,10 +44,10 @@
                                 </div>
                                 @error('tarikh_start') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="col-md-4 p-2">
+                            <div class="col-lg-4 p-2">
                                 <label class="col-lg-12 col-form-label">دوره مرغدار:</label>
                                 <select name="breeder" style="text-align: left; direction: ltr;"
-                                        class="form-control col-lg-8">
+                                        class="form-control col-lg-12">
                                     @if(old('breeder'))
                                         <option about="{{ \Illuminate\Support\Facades\DB::table('periods')
 ->where('breeder', old('breeder'))->where('status', 1)->value('sln') }}" id="breeder"
@@ -70,11 +70,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('t_talafat_s1') }}"
                                                        name="t_talafat_s1">
@@ -82,11 +82,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 وزن تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('v_talafat_s1') }}"
                                                        name="v_talafat_s1">
@@ -96,11 +96,11 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('dan_masrafi_s1') }}"
                                                        name="dan_masrafi_s1">
@@ -108,11 +108,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('ave_vazn_s1') }}"
                                                        name="ave_vazn_s1">
@@ -120,11 +120,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('app_nori_s1') }}"
                                                        name="app_nori_s1">
@@ -146,11 +146,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('t_talafat_s2') }}"
                                                        name="t_talafat_s2">
@@ -158,11 +158,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 وزن تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('v_talafat_s2') }}"
                                                        name="v_talafat_s2">
@@ -172,11 +172,11 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('dan_masrafi_s2') }}"
                                                        name="dan_masrafi_s2">
@@ -184,11 +184,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('ave_vazn_s2') }}"
                                                        name="ave_vazn_s2">
@@ -196,7 +196,7 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
@@ -222,11 +222,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('t_talafat_s3') }}"
                                                        name="t_talafat_s3">
@@ -234,11 +234,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 وزن تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('v_talafat_s3') }}"
                                                        name="v_talafat_s3">
@@ -248,11 +248,11 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('dan_masrafi_s3') }}"
                                                        name="dan_masrafi_s3">
@@ -260,11 +260,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('ave_vazn_s3') }}"
                                                        name="ave_vazn_s3">
@@ -272,7 +272,7 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
@@ -298,11 +298,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('t_talafat_s4') }}"
                                                        name="t_talafat_s4">
@@ -310,11 +310,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 وزن تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('v_talafat_s4') }}"
                                                        name="v_talafat_s4">
@@ -324,11 +324,11 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('dan_masrafi_s4') }}"
                                                        name="dan_masrafi_s4">
@@ -336,11 +336,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('ave_vazn_s4') }}"
                                                        name="ave_vazn_s4">
@@ -348,7 +348,7 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
@@ -374,11 +374,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('t_talafat_s5') }}"
                                                        name="t_talafat_s5">
@@ -386,11 +386,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 وزن تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('v_talafat_s5') }}"
                                                        name="v_talafat_s5">
@@ -400,11 +400,11 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('dan_masrafi_s5') }}"
                                                        name="dan_masrafi_s5">
@@ -412,11 +412,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('ave_vazn_s5') }}"
                                                        name="ave_vazn_s5">
@@ -424,7 +424,7 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
@@ -450,11 +450,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('t_talafat_s6') }}"
                                                        name="t_talafat_s6">
@@ -462,11 +462,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 وزن تلفات:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('v_talafat_s6') }}"
                                                        name="v_talafat_s6">
@@ -476,11 +476,11 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('dan_masrafi_s6') }}"
                                                        name="dan_masrafi_s6">
@@ -488,11 +488,11 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <input type="text" class="form-control"
                                                        value="{{ old('ave_vazn_s6') }}"
                                                        name="ave_vazn_s6">
@@ -500,7 +500,7 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
@@ -540,11 +540,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 نوع بیماری مشاهده شده:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <textarea type="text" class="form-control"
                                                           value="{{ old('type_Sickness') }}" rows="2"
                                                           name="type_Sickness"></textarea>
@@ -552,38 +552,86 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دارو تجویز شده:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="3"
                                                           name="medicines">{{ old('medicines') }}</textarea>
                                                 @error('medicines') <span
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 واکسن:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="4"
                                                           name="vaksan">{{ old('vaksan') }}</textarea>
                                                 @error('vaksan')
                                                 <span class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-3">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 افزودنی ها:
                                             </label>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="4"
                                                           name="vitamin">{{ old('vitamin') }}</textarea>
                                                 @error('vitamin') <span
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{--                        ارسالی به کشتارگاه--}}
+
+                        <div class="card mt-5 shadow shadow-sm">
+                            <div class="card-header">
+                                <h4 class="card-title">ارسالی به کشتارگاه</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-validation">
+                                    <div class="row col-lg-12 mt-5">
+                                        <div class="form-group col-lg-6">
+                                            <label class="col-lg-12 col-form-label">
+                                                تعداد مرغ ارسالی به کشتارگاه:
+                                            </label>
+                                            <div class="col-lg-6 col-md-12">
+                                                <input type="text" class="form-control"
+                                                          value="{{ old('t_send_koshtargah') }}"
+                                                          name="t_send_koshtargah">
+                                                @error('t_send_koshtargah') <span
+                                                    class="text-danger"> {{ $message }}</span> @enderror
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-6">
+                                            <label class="col-lg-12 col-form-label">
+                                                میانگین وزن ارسالی به کشتارگاه:
+                                            </label>
+                                            <div class="col-lg-6 col-md-12">
+                                                <input type="text" class="form-control"
+                                                          name="avr_v_koshtar" value="{{ old('avr_v_koshtar') }}">
+                                                @error('avr_v_koshtar') <span
+                                                    class="text-danger"> {{ $message }}</span> @enderror
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <label class="col-lg-12 col-form-label">
+                                            توضیحات:
+                                        </label>
+                                        <div class="col-lg-12">
+                                                <textarea type="text" class="form-control" rows="6"
+                                                          name="description">{{ old('description') }}</textarea>
+                                            @error('description') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
                                 </div>
