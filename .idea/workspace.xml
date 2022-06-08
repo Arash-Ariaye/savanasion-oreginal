@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-17 04">
-      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/savanasion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/savanasion.iml" afterDir="false" />
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-18 01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +203,7 @@
       <workItem from="1654598200540" duration="2322000" />
       <workItem from="1654600575309" duration="265000" />
       <workItem from="1654600884500" duration="5324000" />
-      <workItem from="1654672276324" duration="1763000" />
+      <workItem from="1654672276324" duration="2484000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -244,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654602868619</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update 1400-03-18 01">
+      <created>1654674401507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654674401507</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +266,8 @@
     <MESSAGE value="update end period" />
     <MESSAGE value="update 1400-03-17 03" />
     <MESSAGE value="update 1400-03-17 04" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-17 04" />
+    <MESSAGE value="update 1400-03-18 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-18 01" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

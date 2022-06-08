@@ -122,6 +122,110 @@
                 </ul>
             </div>
         </div>
+        <div class="col-xl-4 col-lg-6 col-xxl-4 col-sm-6">
+            <div class="card text-white bg-warning text-black">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between"><span class="mb-0 size-2 m-auto">سالن یک (3)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد جوجه این سالن :</span><strong>
+                            {{ $period[0]->t_joje_s3 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">جنسیت جوجه :</span><strong>
+                            {{ $period[0]->sex_joje_s3 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s3') }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">درصد تلفات :</span><strong>  {{ substr($dailyReports->sum('t_talafat_s3') / $period[0]->t_joje_s3 * 100, 0, 4) }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">وزن تلفات:</span><strong>  {{ $dailyReports->sum('v_talafat_s3') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s3') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xxl-4 col-sm-6">
+            <div class="card text-white bg-warning text-black">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between"><span class="mb-0 size-2 m-auto">سالن یک (4)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد جوجه این سالن :</span><strong>
+                            {{ $period[0]->t_joje_s4 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">جنسیت جوجه :</span><strong>
+                            {{ $period[0]->sex_joje_s4 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s4') }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">درصد تلفات :</span><strong>  {{ substr($dailyReports->sum('t_talafat_s4') / $period[0]->t_joje_s2 * 100, 0, 4) }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">وزن تلفات:</span><strong>  {{ $dailyReports->sum('v_talafat_s4') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s4') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xxl-4 col-sm-6">
+            <div class="card text-white bg-warning text-black">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between"><span class="mb-0 size-2 m-auto">سالن یک (5)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد جوجه این سالن :</span><strong>
+                            {{ $period[0]->t_joje_s5 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">جنسیت جوجه :</span><strong>
+                            {{ $period[0]->sex_joje_s5 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s5') }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">درصد تلفات :</span><strong>  {{ substr($dailyReports->sum('t_talafat_s5') / $period[0]->t_joje_s5 * 100, 0, 4) }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">وزن تلفات:</span><strong>  {{ $dailyReports->sum('v_talafat_s5') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s5') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-xxl-4 col-sm-6">
+            <div class="card text-white bg-warning text-black">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between"><span class="mb-0 size-2 m-auto">سالن یک (6)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد جوجه این سالن :</span><strong>
+                            {{ $period[0]->t_joje_s6 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">جنسیت جوجه :</span><strong>
+                            {{ $period[0]->sex_joje_s6 }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">تعداد تلفات :</span><strong>  {{ $dailyReports->sum('t_talafat_s6') }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">درصد تلفات :</span><strong>  {{ substr($dailyReports->sum('t_talafat_s6') / $period[0]->t_joje_s6 * 100, 0, 4) }}</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">وزن تلفات:</span><strong>  {{ $dailyReports->sum('v_talafat_s6') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s6') }} </strong></li>
+                    <li class="list-group-item d-flex justify-content-between"><span
+                            class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="row p-2">
         <div class="card col-xl-12">
