@@ -13,6 +13,7 @@ use App\Models\Period;
 use DateTime;
 use Illuminate\Http\Request;
 use App\Http\Help;
+
 class PeriodController extends Controller
 {
 
@@ -239,11 +240,15 @@ class PeriodController extends Controller
     public function report(Request $request, Talafat $tTalafatch, vTalafat $vTalafatch)
     {
         $d_R = DailyReport::where('breeder', $request['breeder'])->where('period_date', $request['tarikh_start'])->orderBy('id', 'desc');
-
+        $dReports = DailyReport::where('breeder', $request['breeder'])->where('period_date', $request['tarikh_start'])->whereNotNull('t_send_koshtargah')->whereNotNull('avr_v_koshtar')->orderBy('age', 'asc')->get(['age', 't_send_koshtargah', 'avr_v_koshtar']);
+        $period = Period::where('breeder', $request['breeder'])->where('tarikh_start', $request['tarikh_start'])->get();
         $data = [
             'title' => 'گزارش گیری از دوره',
-            'period' => Period::where('breeder', $request['breeder'])->where('tarikh_start', $request['tarikh_start'])->get(),
+            'period' => $period,
             'dailyReports' => $d_R,
+            'zaribMandegari' => $d_R->sum('t_send_koshtargah') / $period[0]->t_joje * 100,
+            'aveBw' => (new \App\Http\Help)->aveBw($dReports, (int) $period[0]->t_joje),
+            'aveDay' => (new \App\Http\Help)->aveDay($dReports, (int) $period[0]->t_joje),
             'tTalafat' => (new \App\Http\Help)->sumReport(
                 $d_R->sum('t_talafat_s1'),
                 $d_R->sum('t_talafat_s2'),
@@ -272,6 +277,7 @@ class PeriodController extends Controller
             'chvTalafat' => $vTalafatch->build($request['tarikh_start'], $request['breeder']),
 
         ];
+
         return view('period.report-period', $data);
     }
 

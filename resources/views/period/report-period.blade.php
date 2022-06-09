@@ -43,6 +43,7 @@
                             <strong>درصد تلفات دوره:</strong>
                             <span class="mb-0"> {{ substr($tTalafat / $period[0]->t_joje * 100, 0, 4) }} </span>
                         </li>
+
                         <li class="list-group-item d-flex px-0 justify-content-between">
                             <strong>وزن تلفات دوره:</strong>
                             <span class="mb-0"> {{ $vTalafat }} </span>
@@ -94,10 +95,7 @@
                         <li class="list-group-item d-flex justify-content-between"><span
                                 class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s1') }} </strong>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">تعداد ارسالی به کشتارگاه :</span><strong> /*/ </strong></li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+
                     </ul>
                 </div>
             </div>
@@ -126,10 +124,7 @@
                         <li class="list-group-item d-flex justify-content-between"><span
                                 class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s2') }} </strong>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">تعداد ارسالی به کشتارگاه :</span><strong> /*/ </strong></li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+
                     </ul>
                 </div>
             </div>
@@ -158,10 +153,7 @@
                         <li class="list-group-item d-flex justify-content-between"><span
                                 class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s3') }} </strong>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">تعداد ارسالی به کشتارگاه :</span><strong> /*/ </strong></li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+
                     </ul>
                 </div>
             </div>
@@ -190,10 +182,7 @@
                         <li class="list-group-item d-flex justify-content-between"><span
                                 class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s4') }} </strong>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">تعداد ارسالی به کشتارگاه :</span><strong> /*/ </strong></li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+
                     </ul>
                 </div>
             </div>
@@ -222,10 +211,7 @@
                         <li class="list-group-item d-flex justify-content-between"><span
                                 class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s5') }} </strong>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">تعداد ارسالی به کشتارگاه :</span><strong> /*/ </strong></li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+
                     </ul>
                 </div>
             </div>
@@ -254,10 +240,7 @@
                         <li class="list-group-item d-flex justify-content-between"><span
                                 class="mb-0">دان مصرفی(کیلوگرم) :</span><strong>  {{ $dailyReports->sum('dan_masrafi_s6') }} </strong>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">تعداد ارسالی به کشتارگاه :</span><strong> /*/ </strong></li>
-                        <li class="list-group-item d-flex justify-content-between"><span
-                                class="mb-0">میانگین وزن :</span><strong> /*/ </strong></li>
+
                     </ul>
                 </div>
             </div>

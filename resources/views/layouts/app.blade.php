@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="{{ asset("pwa/poultry-24.png") }}">
     <link href="{{ asset("assets/vendor/jqvmap/css/jqvmap.min.css") }}" rel="stylesheet">
     <link href="{{ asset("assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css") }}" rel="stylesheet">
-    <link href="{{ asset("assets/css/style.css") }}" rel="stylesheet">
+    <link href="{{ asset("assets/css/styles.css") }}" rel="stylesheet">
     @toastr_css
 
     @yield('css')
