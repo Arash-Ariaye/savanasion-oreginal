@@ -604,6 +604,17 @@
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
+                                    <div class="form-group col-lg-4 ">
+                                        <label class="col-lg-12 col-form-label">
+                                            وزن ارسالی به کشتارگاه:
+                                        </label>
+                                        <div class="col-lg-6 col-md-12">
+                                            <input type="text" class="form-control"
+                                                   name="bw" value="{{$report->avr_v_koshtar}}">
+                                            @error('bw') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
                                     <div class="form-group col-lg-6">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن ارسالی به کشتارگاه:

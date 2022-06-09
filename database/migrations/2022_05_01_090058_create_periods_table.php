@@ -46,6 +46,10 @@ class CreatePeriodsTable extends Migration
             $table->string('dan_baghimande')->nullable();
             $table->string('v_morgh_tah_salon')->nullable();
             $table->string('t_morgh_tah_salon')->nullable();
+
+            $table->string('dan')->nullable();
+            $table->string('dan_price')->nullable();
+
             $table->integer('status')->default('1');
 
             $table->timestamps();

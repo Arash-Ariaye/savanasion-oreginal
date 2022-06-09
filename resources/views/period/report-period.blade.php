@@ -52,6 +52,14 @@
                             <strong>دان مصرفی دوره:</strong>
                             <span class="mb-0"> {{ $danMasrafi }}</span>
                         </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>FCR:</strong>
+                            <span class="mb-0"> {{ round($danMasrafi / $aveBw , 2) }}</span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>FCRc:</strong>
+                            <span class="mb-0"> {{ round($danMasrafi / ($aveBw + $vTalafat) , 2) }}</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="card-footer pt-0 pb-0 text-center">

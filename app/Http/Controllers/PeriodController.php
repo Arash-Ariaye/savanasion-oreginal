@@ -247,9 +247,9 @@ class PeriodController extends Controller
             'period' => $period,
             'dailyReports' => $d_R,
             'zaribMandegari' => $d_R->sum('t_send_koshtargah') / $period[0]->t_joje * 100,
-            'aveBw' => (new \App\Http\Help)->aveBw($dReports, (int) $period[0]->t_joje),
-            'aveDay' => (new \App\Http\Help)->aveDay($dReports, (int) $period[0]->t_joje),
-            'tTalafat' => (new \App\Http\Help)->sumReport(
+            'aveBw' => (new Help)->aveBw($dReports, (int) $period[0]->t_joje),
+            'aveDay' => (new Help)->aveDay($dReports, (int) $period[0]->t_joje),
+            'tTalafat' => (new Help)->sumReport(
                 $d_R->sum('t_talafat_s1'),
                 $d_R->sum('t_talafat_s2'),
                 $d_R->sum('t_talafat_s3'),
@@ -257,7 +257,7 @@ class PeriodController extends Controller
                 $d_R->sum('t_talafat_s5'),
                 $d_R->sum('t_talafat_s6')
             ),
-            'vTalafat' => (new \App\Http\Help)->sumReport(
+            'vTalafat' => (new Help)->sumReport(
                 $d_R->sum('v_talafat_s1'),
                 $d_R->sum('v_talafat_s2'),
                 $d_R->sum('v_talafat_s3'),
@@ -265,7 +265,7 @@ class PeriodController extends Controller
                 $d_R->sum('v_talafat_s5'),
                 $d_R->sum('v_talafat_s6')
             ),
-            'danMasrafi' => (new \App\Http\Help)->sumReport(
+            'danMasrafi' => (new Help)->sumReport(
                 $d_R->sum('dan_masrafi_s1'),
                 $d_R->sum('dan_masrafi_s2'),
                 $d_R->sum('dan_masrafi_s3'),
