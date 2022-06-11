@@ -30,11 +30,14 @@
                                     @csrf
                                     <div class="form-group">
                                         <label class="mb-1"><strong>ایمیل</strong></label>
-                                        <input type="email" name="email" class="form-control" required>
+                                        <input type="email" name="email" class="form-control" required value="{{ old('email') }}">
+                                        @error('email') <span class="text-danger"> {{ $message }}</span> @enderror
+
                                     </div>
                                     <div class="form-group">
                                         <label class="mb-1"><strong>رمز عبور</strong></label>
-                                        <input type="password" name="password" class="form-control" required>
+                                        <input type="password" name="password" class="form-control" required value="{{ old('password') }}">
+                                        @error('password') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">

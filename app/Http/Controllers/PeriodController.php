@@ -178,12 +178,17 @@ class PeriodController extends Controller
             'tarikh_end' => 'required',
             'period' => 'required',
             'cat_end' => 'required',
-            'dan_baghimande' => 'required|numeric',
-            'v_morgh_tah_salon' => 'required|numeric',
-            't_morgh_tah_salon' => 'required|numeric',
+            'dan_baghimande' => 'nullable|numeric',
+            'v_morgh_tah_salon' => 'nullable|numeric',
+            't_morgh_tah_salon' => 'nullable|numeric',
+            'dan' => 'nullable|numeric',
+            'dan_price' => 'nullable|numeric',
         ], [
-            '*.required' => 'حتما مقداری وارد کنید.'
+            '*.required' => 'حتما مقداری وارد کنید.',
+            '*.numeric' => 'فقط مقدار عددی وارد کنید.',
         ]);
+        $update = Period::find($check['period']);
+
         try {
             $update = Period::find($check['period']);
             $update->update([
@@ -192,6 +197,8 @@ class PeriodController extends Controller
                 'dan_baghimande' => $check['dan_baghimande'],
                 'v_morgh_tah_salon' => $check['v_morgh_tah_salon'],
                 't_morgh_tah_salon' => $check['t_morgh_tah_salon'],
+                'dan' => $check['dan'],
+                'dan_price' => $check['dan_price'],
                 'status' => 0
             ]);
             toastr()->success('با موفقیت ثبت شد.');
@@ -213,6 +220,8 @@ class PeriodController extends Controller
                 'dan_baghimande' => null,
                 'v_morgh_tah_salon' => null,
                 't_morgh_tah_salon' => null,
+                'dan' => null,
+                'dan_price' => null,
                 'status' => 1
             ]);
             toastr()->success('دوره با موفقیت جاری شد.');
@@ -240,15 +249,15 @@ class PeriodController extends Controller
     public function report(Request $request, Talafat $tTalafatch, vTalafat $vTalafatch)
     {
         $d_R = DailyReport::where('breeder', $request['breeder'])->where('period_date', $request['tarikh_start'])->orderBy('id', 'desc');
-        $dReports = DailyReport::where('breeder', $request['breeder'])->where('period_date', $request['tarikh_start'])->whereNotNull('t_send_koshtargah')->whereNotNull('avr_v_koshtar')->orderBy('age', 'asc')->get(['age', 't_send_koshtargah', 'avr_v_koshtar']);
+        $dReports = DailyReport::where('breeder', $request['breeder'])->where('period_date', $request['tarikh_start'])->whereNotNull('t_send_koshtargah')->whereNotNull('avr_v_koshtar')->orderBy('age', 'asc')->get();
         $period = Period::where('breeder', $request['breeder'])->where('tarikh_start', $request['tarikh_start'])->get();
         $data = [
             'title' => 'گزارش گیری از دوره',
             'period' => $period,
             'dailyReports' => $d_R,
             'zaribMandegari' => $d_R->sum('t_send_koshtargah') / $period[0]->t_joje * 100,
-            'aveBw' => (new Help)->aveBw($dReports, (int) $period[0]->t_joje),
-            'aveDay' => (new Help)->aveDay($dReports, (int) $period[0]->t_joje),
+            'aveBw' => (new Help)->aveBw($dReports, (int)$period[0]->t_joje),
+            'aveDay' => (new Help)->aveDay($dReports, (int)$period[0]->t_joje),
             'tTalafat' => (new Help)->sumReport(
                 $d_R->sum('t_talafat_s1'),
                 $d_R->sum('t_talafat_s2'),

@@ -31,9 +31,9 @@
                             @endforeach
                         @endif
                         <div class="row col-lg-12 justify-content-lg-between">
-                            <div class="col-md-4 p-2">
+                            <div class="col-lg-4 p-2">
                                 <label class="control-label">تاریخ تخله کامل</label>
-                                <div class="input-group col-md-12">
+                                <div class="input-group col-lg-12">
                                     <div class="input-group-prepend">
                                             <span class="input-group-text">
                                                 <i class="fa fa-calendar"></i>
@@ -45,7 +45,7 @@
                                 </div>
                                 @error('tarikh_end') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="col-md-4 p-2">
+                            <div class="col-lg-4 p-2">
                                 <label class="control-label">دسته بندی</label>
                                 <select name="cat_end" style="text-align: left; direction: ltr;"
                                         class="form-control">
@@ -59,10 +59,8 @@
                                 </select>
                                 @error('cat_end') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-form-label">
-                                    مرغدار:
-                                </label>
+                            <div class="col-lg-4 p-2">
+                                <label class="control-label">مرغدار:</label>
                                 <select name="period" style="text-align: left; direction: ltr;"
                                         class="form-control">
                                     @if(old('period'))
@@ -75,43 +73,72 @@
                                 @error('period') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label class="col-md-12 col-form-label">
+                        <div class="row mt-3">
+                            <div class="form-group col-lg-4">
+                                <label class="col-lg-12 col-form-label">
                                     دان باقیمانده:
                                 </label>
-                                <div class="col-md-12">
+                                <div class="col-lg-12">
                                     <input type="text" class="form-control" value="{{ old('dan_baghimande') }}"
                                            name="dan_baghimande">
                                     @error('dan_baghimande') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-md-12 col-form-label">
+                            <div class="form-group col-lg-4">
+                                <label class="col-lg-12 col-form-label">
                                     تعداد مرغ ته سالن:
                                 </label>
-                                <div class="col-md-12">
+                                <div class="col-lg-12">
                                     <input type="text" class="form-control" value="{{ old('t_morgh_tah_salon') }}"
                                            name="t_morgh_tah_salon">
                                     @error('t_morgh_tah_salon') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-md-12 col-form-label">
+                            <div class="form-group col-lg-4">
+                                <label class="col-lg-12 col-form-label">
                                      وزن مرغ مرغ ته سالن:
                                 </label>
-                                <div class="col-md-12">
+                                <div class="col-lg-12">
                                     <input type="text" class="form-control" value="{{ old('v_morgh_tah_salon') }}"
                                            name="v_morgh_tah_salon">
                                     @error('v_morgh_tah_salon') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">اطلاعات دان</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mt-3">
+                                    <div class="form-group col-lg-4">
+                                        <label class="col-lg-12 col-form-label">
+                                            دان باقیمانده:
+                                        </label>
+                                        <div class="col-lg-12">
+                                            <input type="text" class="form-control" value="{{ old('dan') }}"
+                                                   name="dan">
+                                            @error('dan') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label class="col-lg-12 col-form-label">
+                                            قیمت دان:
+                                        </label>
+                                        <div class="col-lg-12">
+                                            <input type="text" class="form-control" value="{{ old('dan_price') }}"
+                                                   name="dan_price">
+                                            @error('dan_price') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-lg-12 mt-5">
                             <button type="submit" class="btn btn-primary">ثبت پایان دوره</button>
                         </div>
+
                     </form>
                 </div>
             </div>

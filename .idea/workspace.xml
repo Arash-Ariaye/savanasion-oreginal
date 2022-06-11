@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-19 02">
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-19 03">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_05_01_090058_create_periods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_05_01_090058_create_periods_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +173,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/css" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -211,7 +212,9 @@
       <workItem from="1654600575309" duration="265000" />
       <workItem from="1654600884500" duration="5324000" />
       <workItem from="1654672276324" duration="2922000" />
-      <workItem from="1654757789436" duration="15672000" />
+      <workItem from="1654757789436" duration="15732000" />
+      <workItem from="1654928878236" duration="6305000" />
+      <workItem from="1654968365887" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -276,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654774173826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update 1400-03-19 03">
+      <created>1654777288174</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654777288174</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +317,8 @@
     <MESSAGE value="update 1400-03-18 03" />
     <MESSAGE value="update 1400-03-19 01" />
     <MESSAGE value="update 1400-03-19 02" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-19 02" />
+    <MESSAGE value="update 1400-03-19 03" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-19 03" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -40,8 +40,8 @@
                             <span class="mb-0"> {{ $tTalafat }} </span>
                         </li>
                         <li class="list-group-item d-flex px-0 justify-content-between">
-                            <strong>درصد تلفات دوره:</strong>
-                            <span class="mb-0"> {{ substr($tTalafat / $period[0]->t_joje * 100, 0, 4) }} </span>
+                            <strong>درصد ماندگاری گله:</strong>
+                            <span class="mb-0"> {{ 100 - substr($tTalafat / $period[0]->t_joje * 100, 0, 4)}} </span>
                         </li>
 
                         <li class="list-group-item d-flex px-0 justify-content-between">
@@ -52,14 +52,16 @@
                             <strong>دان مصرفی دوره:</strong>
                             <span class="mb-0"> {{ $danMasrafi }}</span>
                         </li>
-                        <li class="list-group-item d-flex px-0 justify-content-between">
-                            <strong>FCR:</strong>
-                            <span class="mb-0"> {{ round($danMasrafi / $aveBw , 2) }}</span>
-                        </li>
-                        <li class="list-group-item d-flex px-0 justify-content-between">
-                            <strong>FCRc:</strong>
-                            <span class="mb-0"> {{ round($danMasrafi / ($aveBw + $vTalafat) , 2) }}</span>
-                        </li>
+                        @if(!is_null($period[0]->dan))
+                            <li class="list-group-item d-flex px-0 justify-content-between">
+                                <strong>FCR:</strong>
+                                <span class="mb-0"> {{ round($danMasrafi / $period[0]->dan , 2) }}</span>
+                            </li>
+                            <li class="list-group-item d-flex px-0 justify-content-between">
+                                <strong>FCRc:</strong>
+                                <span class="mb-0"> {{ round($danMasrafi / ($period[0]->dan + $vTalafat) , 2) }}</span>
+                            </li>
+                        @endif
                     </ul>
                 </div>
                 <div class="card-footer pt-0 pb-0 text-center">
