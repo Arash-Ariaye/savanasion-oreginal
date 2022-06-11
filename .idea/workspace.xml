@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-19 03">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-21 01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +208,7 @@
       <workItem from="1654672276324" duration="2922000" />
       <workItem from="1654757789436" duration="15732000" />
       <workItem from="1654928878236" duration="6305000" />
-      <workItem from="1654968365887" duration="134000" />
+      <workItem from="1654968365887" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -286,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654777288174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update 1400-03-21 01">
+      <created>1654968592078</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654968592079</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +319,8 @@
     <MESSAGE value="update 1400-03-19 01" />
     <MESSAGE value="update 1400-03-19 02" />
     <MESSAGE value="update 1400-03-19 03" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-19 03" />
+    <MESSAGE value="update 1400-03-21 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-21 01" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
