@@ -286,7 +286,12 @@ class PeriodController extends Controller
             'chvTalafat' => $vTalafatch->build($request['tarikh_start'], $request['breeder']),
 
         ];
-
+        $data['liveAbility'] = 100 - round($data['tTalafat'] / $period[0]->t_joje * 100, 2);
+        if (!is_null($period['0']->dan)){
+            $data['fcr'] = round($data['danMasrafi'] / (int)$period[0]->dan , 3);
+            $data['fcrc'] = round($data['danMasrafi'] / ((int)$period[0]->dan + $data['vTalafat']) , 3);
+            $data['epef'] = round(($data['liveAbility'] * (int)$period[0]->dan * 100) / ($data['aveDay'] * $data['fcrc']) , 2);
+        }
         return view('period.report-period', $data);
     }
 

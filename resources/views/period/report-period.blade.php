@@ -41,7 +41,7 @@
                         </li>
                         <li class="list-group-item d-flex px-0 justify-content-between">
                             <strong>درصد ماندگاری گله:</strong>
-                            <span class="mb-0"> {{ 100 - substr($tTalafat / $period[0]->t_joje * 100, 0, 4)}} </span>
+                            <span class="mb-0"> {{ $liveAbility }} </span>
                         </li>
 
                         <li class="list-group-item d-flex px-0 justify-content-between">
@@ -55,11 +55,15 @@
                         @if(!is_null($period[0]->dan))
                             <li class="list-group-item d-flex px-0 justify-content-between">
                                 <strong>FCR:</strong>
-                                <span class="mb-0"> {{ round($danMasrafi / $period[0]->dan , 2) }}</span>
+                                <span class="mb-0"> {{ $fcr }}%</span>
                             </li>
                             <li class="list-group-item d-flex px-0 justify-content-between">
                                 <strong>FCRc:</strong>
-                                <span class="mb-0"> {{ round($danMasrafi / ($period[0]->dan + $vTalafat) , 2) }}</span>
+                                <span class="mb-0"> {{ $fcrc }}%</span>
+                            </li>
+                            <li class="list-group-item d-flex px-0 justify-content-between">
+                                <strong>EPEF:</strong>
+                                <span class="mb-0"> {{ $epef }}%</span>
                             </li>
                         @endif
                     </ul>
