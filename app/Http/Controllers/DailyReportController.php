@@ -100,7 +100,7 @@ class DailyReportController extends Controller
         if (!is_null($dailyReport)):
             $data = [
                 'title' => 'افزودن گزارش روزانه',
-                'breeder' => Period::find($dailyReport)->get(),
+                'breeder' => Period::find($dailyReport)->orderBy('id', 'desc')->get(),
             ];
         else:
             $data = [

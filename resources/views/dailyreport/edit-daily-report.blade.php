@@ -32,7 +32,7 @@
                         @endif
                         <div class="row col-lg-12 justify-content-lg-between">
                             <div class="col-md-4 p-2">
-                                <label class="col-lg-6 col-form-label">تاریخ گزارش:</label>
+                                <label class=" col-form-label">تاریخ گزارش:</label>
                                 <div class="input-group col-lg-8">
                                     <div class="input-group-prepend">
                                             <span class="input-group-text">
@@ -45,7 +45,7 @@
                                 </div>
                                 @error('tarikh_start') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="col-md-4 p-2">
+                            <div class="col-md-4">
                                 <label class="col-lg-6 col-form-label">دوره مرغدار:</label>
                                 <select name="breeder" style="text-align: left; direction: ltr;"
                                         class="form-control col-lg-8">
@@ -53,6 +53,9 @@
                                         <option
                                             value="{{old('breeder') ?? $report->breeder}}">{{old('breeder') ?? $report->breeder}}</option>
                                     @endif
+                                        <option
+                                            value="{{$report->breeder}}">{{ $report->breeder}}</option>
+
                                     @foreach($breeder as $item)
                                         <option
                                             value="{{$item->breeder}}">{{$item->breeder}}</option>
@@ -71,7 +74,7 @@
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 تعداد تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -84,7 +87,7 @@
                                         </div>
 
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 وزن تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -99,7 +102,7 @@
                                     </div>
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
                                             <div class="col-lg-8">
@@ -111,7 +114,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 میانگین وزن:
                                             </label>
                                             <div class="col-lg-8">
@@ -123,7 +126,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 برنامه خاموشی:
                                             </label>
                                             <div class="col-lg-8">
@@ -149,7 +152,7 @@
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 تعداد تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -162,7 +165,7 @@
                                         </div>
 
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 وزن تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -177,7 +180,7 @@
                                     </div>
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
                                             <div class="col-lg-8">
@@ -189,7 +192,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 میانگین وزن:
                                             </label>
                                             <div class="col-lg-8">
@@ -201,7 +204,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 برنامه خاموشی:
                                             </label>
                                             <div class="col-lg-8">
@@ -227,7 +230,7 @@
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 تعداد تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -240,7 +243,7 @@
                                         </div>
 
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 وزن تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -255,7 +258,7 @@
                                     </div>
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
                                             <div class="col-lg-8">
@@ -267,7 +270,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 میانگین وزن:
                                             </label>
                                             <div class="col-lg-8">
@@ -279,7 +282,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 برنامه خاموشی:
                                             </label>
                                             <div class="col-lg-8">
@@ -305,7 +308,7 @@
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 تعداد تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -318,7 +321,7 @@
                                         </div>
 
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 وزن تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -332,7 +335,7 @@
                                     </div>
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
                                             <div class="col-lg-8">
@@ -344,7 +347,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 میانگین وزن:
                                             </label>
                                             <div class="col-lg-8">
@@ -356,7 +359,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 برنامه خاموشی:
                                             </label>
                                             <div class="col-lg-8">
@@ -382,7 +385,7 @@
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 تعداد تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -394,7 +397,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 وزن تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -408,7 +411,7 @@
                                     </div>
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
                                             <div class="col-lg-8">
@@ -420,7 +423,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 میانگین وزن:
                                             </label>
                                             <div class="col-lg-8">
@@ -432,7 +435,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 برنامه خاموشی:
                                             </label>
                                             <div class="col-lg-8">
@@ -458,7 +461,7 @@
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 تعداد تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -471,7 +474,7 @@
                                         </div>
 
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 وزن تلفات:
                                             </label>
                                             <div class="col-lg-8">
@@ -485,7 +488,7 @@
                                     </div>
                                     <div class="row col-lg-12 mt-5">
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
                                             <div class="col-lg-8">
@@ -497,7 +500,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 میانگین وزن:
                                             </label>
                                             <div class="col-lg-8">
@@ -509,7 +512,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-4">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 برنامه خاموشی:
                                             </label>
                                             <div class="col-lg-8">
@@ -560,7 +563,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 دارو تجویز شده:
                                             </label>
                                             <div class="col-lg-8">
@@ -571,7 +574,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 واکسن:
                                             </label>
                                             <div class="col-lg-8">
@@ -581,7 +584,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-3">
-                                            <label class="col-lg-6 col-form-label">
+                                            <label class=" col-form-label">
                                                 افزودنی ها:
                                             </label>
                                             <div class="col-lg-8">

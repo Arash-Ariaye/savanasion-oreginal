@@ -49,8 +49,8 @@
                                 <select name="breeder" style="text-align: left; direction: ltr;"
                                         class="form-control col-lg-12">
                                     @if(old('breeder'))
-                                        <option about="{{ \Illuminate\Support\Facades\DB::table('periods')
-->where('breeder', old('breeder'))->where('status', 1)->value('sln') }}" id="breeder"
+                                        <option about="{{ dd(\Illuminate\Support\Facades\DB::table('periods')
+->where('breeder', old('breeder'))->where('status', 1)->value('sln')) }}" id="breeder"
                                                 value="{{old('breeder')}}">{{old('breeder')}}</option>
                                     @endif
                                     @foreach($breeder as $item)

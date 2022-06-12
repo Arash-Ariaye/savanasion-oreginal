@@ -50,8 +50,10 @@
                                 <select name="cat_start" style="text-align: left; direction: ltr;"
                                         class="form-control">
                                     @if(old('cat_start'))
-                                        <option value="{{old('cat_start') ?? $period[0]->cat_start}}">{{old('cat_start') ?? $period[0]->cat_start}}</option>
+                                        <option
+                                            value="{{old('cat_start') ?? $period[0]->cat_start}}">{{old('cat_start') ?? $period[0]->cat_start}}</option>
                                     @endif
+                                    <option value="{{$period[0]->cat_start}}">{{$period[0]->cat_start}}</option>
                                     @foreach($categories as $item)
                                         <option
                                             value="{{$item->category}}">{{$item->category .'    '. $item->mah}}</option>
@@ -60,31 +62,36 @@
                                 @error('category') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-md-3">
+                        <div class="row mt-4">
+                            <div class="form-group col-lg-3 col-md-12">
                                 <label class="col-form-label">
                                     مرغدار:
                                 </label>
                                 <select name="breeder" style="text-align: left; direction: ltr;"
                                         class="form-control">
                                     @if(old('breeder'))
-                                        <option value="{{old('breeder') ?? $period[0]->breeder}}">{{old('breeder') ?? $period[0]->breeder}}</option>
+                                        <option
+                                            value="{{old('breeder') ?? $period[0]->breeder}}">{{old('breeder') ?? $period[0]->breeder}}</option>
                                     @endif
+                                    <option
+                                        value="{{ $period[0]->breeder}}">{{ $period[0]->breeder}}</option>
+
                                     @foreach($breeder as $item)
                                         <option value="{{$item->name}}"> {{$item->name}}</option>
                                     @endforeach
                                 </select>
                                 @error('breeder') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-lg-3 col-md-12">
                                 <label class="col-form-label">
                                     دکتر دامپزشک:
                                 </label>
                                 <select name="dr" style="text-align: left; direction: ltr;"
                                         class="form-control">
-                                    @if(old('dr'))
-                                        <option value="{{old('dr') ?? $period[0]->dr}}">{{old('dr') ?? $period[0]->dr}}</option>
-                                    @endif
+
+                                        <option
+                                            value="{{old('dr') ?? $period[0]->dr}}">{{old('dr') ?? $period[0]->dr}}</option>
+
                                     @foreach($drs as $item)
                                         <option
                                             value="{{$item->name}}">{{$item->name}}</option>
@@ -98,9 +105,8 @@
                                 </label>
                                 <select name="expert" style="text-align: left; direction: ltr;"
                                         class="form-control">
-                                    @if(old('expert'))
-                                        <option value="{{old('expert') ?? $period[0]->expert}}">{{old('expert') ?? $period[0]->expert}}</option>
-                                    @endif
+                                    <option
+                                        value="{{old('expert') ?? $period[0]->expert}}">{{old('expert') ?? $period[0]->expert}}</option>
                                     @foreach($experts as $item)
                                         <option
                                             value="{{$item->name}}">{{$item->name}}</option>
@@ -109,47 +115,51 @@
                                 @error('expert') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
                             <div class="form-group col-md-3">
-                                <label class="col-lg-4 col-form-label">
+                                <label class=" col-form-label">
                                     نوع بستر:
                                 </label>
                                 <div class="col-lg-8">
-                                    <input type="text" required class="form-control" value="{{ old('bed') ?? $period[0]->bed}}"
+                                    <input type="text" required class="form-control"
+                                           value="{{ old('bed') ?? $period[0]->bed}}"
                                            name="bed">
                                     @error('bed') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mt-4">
                             <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                                <label class=" col-form-label">
                                     تعداد جوجه ریزی: </label>
                                 <div class="col-lg-8">
-                                    <input type="number" required class="form-control" value="{{ old('t_joje') ?? $period[0]->t_joje}}"
+                                    <input type="number" required class="form-control"
+                                           value="{{ old('t_joje') ?? $period[0]->t_joje}}"
                                            name="t_joje">
                                     @error('t_joje') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                                <label class="col-form-label">
                                     وزن جوجه اولیه: </label>
                                 <div class="col-lg-8">
-                                    <input type="number" required class="form-control" value="{{ old('v_joje') ?? $period[0]->v_joje }}"
+                                    <input type="number" required class="form-control"
+                                           value="{{ old('v_joje') ?? $period[0]->v_joje }}"
                                            name="v_joje">
                                     @error('v_joje') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                                <label class=" col-form-label">
                                     جوجه کشی: </label>
                                 <div class="col-lg-8">
-                                    <input type="text" required class="form-control" value="{{ old('joje_keshi') ?? $period[0]->joje_keshi }}"
+                                    <input type="text" required class="form-control"
+                                           value="{{ old('joje_keshi') ?? $period[0]->joje_keshi }}"
                                            name="joje_keshi">
                                     @error('joje_keshi') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
 
                         </div>
-                        <div class="row">
+                        <div class="row mt-4">
                             <div class="form-group col-md-3">
                                 <label class="col-form-label">
                                     سویه:
@@ -157,7 +167,8 @@
                                 <select name="soye" style="text-align: left; direction: ltr;"
                                         class="form-control">
                                     @if(old('soye'))
-                                        <option value="{{old('soye') ?? $period[0]->soye }}">{{old('soye') ?? $period[0]->soye }}</option>
+                                        <option
+                                            value="{{old('soye') ?? $period[0]->soye }}">{{old('soye') ?? $period[0]->soye }}</option>
                                     @else
                                         <option value="راس">راس</option>
                                         <option value="پلاس">پلاس</option>
@@ -169,16 +180,17 @@
                                 @error('soye') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
                             <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                                <label class=" col-form-label">
                                     مزرعه مرغ مادر: </label>
                                 <div class="col-lg-8">
-                                    <input type="text" required class="form-control" value="{{ old('farm_madar') ?? $period[0]->farm_madar }}"
+                                    <input type="text" required class="form-control"
+                                           value="{{ old('farm_madar') ?? $period[0]->farm_madar }}"
                                            name="farm_madar">
                                     @error('farm_madar') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
                             <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                                <label class=" col-form-label">
                                     سن گله مادر: </label>
                                 <div class="col-lg-8">
                                     <input type="number" required class="form-control"
@@ -198,9 +210,11 @@
                                     <div class="form-group col-sm-5">
                                         <label class="col-lg-5 col-form-label">تعداد جوجه: </label>
                                         <div class="col-lg-5">
-                                            <input type="number" required class="form-control" value="{{ old('t_joje_s1') ?? $period[0]->t_joje_s1}}"
+                                            <input type="number" required class="form-control"
+                                                   value="{{ old('t_joje_s1') ?? $period[0]->t_joje_s1}}"
                                                    name="t_joje_s1">
-                                            @error('t_joje_s1') <span class="text-danger"> {{ $message }}</span> @enderror
+                                            @error('t_joje_s1') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
 
@@ -210,13 +224,12 @@
                                         </label>
                                         <select name="sex_joje_s1" style="text-align: left; direction: ltr;"
                                                 class="form-control">
-                                            @if(old('sex_joje_s1') ?? $period[0]->sex_joje_s1)
-                                                <option value="{{old('sex_joje_s1') ?? $period[0]->sex_joje_s1}}">{{old('sex_joje_s1') ?? $period[0]->sex_joje_s1}}</option>
-                                            @else
-                                                <option value=""></option>
+                                            <option
+                                                value="{{old('sex_joje_s1') ?? $period[0]->sex_joje_s1}}">{{old('sex_joje_s1') ?? $period[0]->sex_joje_s1}}</option>
+
+                                            <option value=""></option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
-                                            @endif
                                         </select>
                                         @error('sex_joje_s1') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
@@ -226,9 +239,11 @@
                                     <div class="form-group col-sm-5">
                                         <label class="col-lg-5 col-form-label">تعداد جوجه: </label>
                                         <div class="col-lg-5">
-                                            <input type="number" class="form-control" value="{{ old('t_joje_s2') ?? $period[0]->t_joje_s1}}"
+                                            <input type="number" class="form-control"
+                                                   value="{{ old('t_joje_s2') ?? $period[0]->t_joje_s1}}"
                                                    name="t_joje_s2">
-                                            @error('t_joje_s2') <span class="text-danger"> {{ $message }}</span> @enderror
+                                            @error('t_joje_s2') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
 
                                     </div>
@@ -238,13 +253,12 @@
                                         </label>
                                         <select name="sex_joje_s2" style="text-align: left; direction: ltr;"
                                                 class="form-control">
-                                            @if(old('sex_joje_s2') ?? $period[0]->sex_joje_s2)
-                                                <option value="{{old('sex_joje_s2') ?? $period[0]->sex_joje_s2}}">{{old('sex_joje_s2') ?? $period[0]->sex_joje_s2}}</option>
-                                            @else
-                                                <option value=""></option>
+                                            <option
+                                                value="{{old('sex_joje_s2') ?? $period[0]->sex_joje_s2}}">{{old('sex_joje_s2') ?? $period[0]->sex_joje_s2}}</option>
+
+                                            <option value=""></option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
-                                            @endif
                                         </select>
                                         @error('sex_joje_s2') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
@@ -255,9 +269,11 @@
                                     <div class="form-group col-sm-5">
                                         <label class="col-lg-5 col-form-label">تعداد جوجه: </label>
                                         <div class="col-lg-5">
-                                            <input type="number" class="form-control" value="{{ old('t_joje_s3') ?? $period[0]->t_joje_s3}}"
+                                            <input type="number" class="form-control"
+                                                   value="{{ old('t_joje_s3') ?? $period[0]->t_joje_s3}}"
                                                    name="t_joje_s3">
-                                            @error('t_joje_s3') <span class="text-danger"> {{ $message }}</span> @enderror
+                                            @error('t_joje_s3') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
 
                                     </div>
@@ -267,13 +283,12 @@
                                         </label>
                                         <select name="sex_joje_s3" style="text-align: left; direction: ltr;"
                                                 class="form-control">
-                                            @if(old('sex_joje_s3') ?? $period[0]->sex_joje_s3)
-                                                <option value="{{old('sex_joje_s3') ?? $period[0]->sex_joje_s3}}">{{old('sex_joje_s3') ?? $period[0]->sex_joje_s3}}</option>
-                                            @else
-                                                <option value=""></option>
+                                            <option
+                                                value="{{old('sex_joje_s3') ?? $period[0]->sex_joje_s3}}">{{old('sex_joje_s3') ?? $period[0]->sex_joje_s3}}</option>
+
+                                            <option value=""></option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
-                                            @endif
                                         </select>
                                         @error('sex_joje_s3') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
@@ -284,9 +299,11 @@
                                     <div class="form-group col-sm-5">
                                         <label class="col-lg-5 col-form-label">تعداد جوجه: </label>
                                         <div class="col-lg-5">
-                                            <input type="number"  class="form-control" value="{{ old('t_joje_s4') ?? $period[0]->t_joje_s4}}"
+                                            <input type="number" class="form-control"
+                                                   value="{{ old('t_joje_s4') ?? $period[0]->t_joje_s4}}"
                                                    name="t_joje_s4">
-                                            @error('t_joje_s4') <span class="text-danger"> {{ $message }}</span> @enderror
+                                            @error('t_joje_s4') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
 
                                     </div>
@@ -296,13 +313,12 @@
                                         </label>
                                         <select name="sex_joje_s4" style="text-align: left; direction: ltr;"
                                                 class="form-control">
-                                            @if(old('sex_joje_s4') ?? $period[0]->sex_joje_s4)
-                                                <option value="{{old('sex_joje_s4') ?? $period[0]->sex_joje_s4}}">{{old('sex_joje_s4') ?? $period[0]->sex_joje_s4}}</option>
-                                            @else
-                                                <option value=""></option>
+                                            <option
+                                                value="{{old('sex_joje_s4') ?? $period[0]->sex_joje_s4}}">{{old('sex_joje_s4') ?? $period[0]->sex_joje_s4}}</option>
+
+                                            <option value=""></option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
-                                            @endif
                                         </select>
                                         @error('sex_joje_s4') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
@@ -312,9 +328,11 @@
                                     <div class="form-group col-sm-5">
                                         <label class="col-lg-5 col-form-label">تعداد جوجه: </label>
                                         <div class="col-lg-5">
-                                            <input type="number" class="form-control" value="{{ old('t_joje_s5') ?? $period[0]->t_joje_s5}}"
+                                            <input type="number" class="form-control"
+                                                   value="{{ old('t_joje_s5') ?? $period[0]->t_joje_s5}}"
                                                    name="t_joje_s5">
-                                            @error('t_joje_s5') <span class="text-danger"> {{ $message }}</span> @enderror
+                                            @error('t_joje_s5') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
 
                                     </div>
@@ -324,13 +342,11 @@
                                         </label>
                                         <select name="sex_joje_s5" style="text-align: left; direction: ltr;"
                                                 class="form-control">
-                                            @if(old('sex_joje_s5') ?? $period[0]->sex_joje_s5)
-                                                <option value="{{old('sex_joje_s5') ?? $period[0]->sex_joje_s5}}">{{old('sex_joje_s5') ?? $period[0]->sex_joje_s5}}</option>
-                                            @else
+                                            <option
+                                                value="{{old('sex_joje_s5') ?? $period[0]->sex_joje_s5}}">{{old('sex_joje_s5') ?? $period[0]->sex_joje_s5}}</option>
                                                 <option value=""></option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
-                                            @endif
                                         </select>
                                         @error('sex_joje_s5') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
@@ -341,9 +357,11 @@
                                     <div class="form-group col-sm-5">
                                         <label class="col-lg-5 col-form-label">تعداد جوجه: </label>
                                         <div class="col-lg-5">
-                                            <input type="number" class="form-control" value="{{ old('t_joje_s6') ?? $period[0]->t_joje_s6}}"
+                                            <input type="number" class="form-control"
+                                                   value="{{ old('t_joje_s6') ?? $period[0]->t_joje_s6}}"
                                                    name="t_joje_s6">
-                                            @error('t_joje_s6') <span class="text-danger"> {{ $message }}</span> @enderror
+                                            @error('t_joje_s6') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
 
                                     </div>
@@ -353,12 +371,11 @@
                                         </label>
                                         <select name="sex_joje_s6" style="text-align: left; direction: ltr;"
                                                 class="form-control">
-                                            @if(old('sex_joje_s6') ?? $period[0]->sex_joje_s6)
-                                                <option value="{{old('sex_joje_s6') ?? $period[0]->sex_joje_s6}}">{{old('sex_joje_s6') ?? $period[0]->sex_joje_s6}}</option>
-                                            @else
-                                                <option value="خروس">خروس</option>
+                                            <option
+                                                value="{{old('sex_joje_s6') ?? $period[0]->sex_joje_s6}}">{{old('sex_joje_s6') ?? $period[0]->sex_joje_s6}}</option>
+
+                                            <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
-                                            @endif
                                         </select>
                                         @error('sex_joje_s6') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
@@ -366,13 +383,18 @@
                             </div>
                         </div>
                         <button id="add" type="button" class="btn btn-success">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <rect x="0" y="0" width="24" height="24"></rect>
                                     <circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10"></circle>
-                                    <path d="M11,11 L11,7 C11,6.44771525 11.4477153,6 12,6 C12.5522847,6 13,6.44771525 13,7 L13,11 L17,11 C17.5522847,11 18,11.4477153 18,12 C18,12.5522847 17.5522847,13 17,13 L13,13 L13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 L11,13 L7,13 C6.44771525,13 6,12.5522847 6,12 C6,11.4477153 6.44771525,11 7,11 L11,11 Z" fill="#000000"></path>
+                                    <path
+                                        d="M11,11 L11,7 C11,6.44771525 11.4477153,6 12,6 C12.5522847,6 13,6.44771525 13,7 L13,11 L17,11 C17.5522847,11 18,11.4477153 18,12 C18,12.5522847 17.5522847,13 17,13 L13,13 L13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 L11,13 L7,13 C6.44771525,13 6,12.5522847 6,12 C6,11.4477153 6.44771525,11 7,11 L11,11 Z"
+                                        fill="#000000"></path>
                                 </g>
-                            </svg> افزودن سالن</button>
+                            </svg>
+                            افزودن سالن
+                        </button>
 
                         <div class="col-lg-12 mt-5">
                             <button type="submit" class="btn btn-primary">بروزرسانی</button>
@@ -389,10 +411,10 @@
     <script type="text/javascript">
         var i = 2;
         $("#add").click(function () {
-            var sln = {{ \App\Models\Period::find($period[0]->id)->value('sln') }} ;
-            if (i <= sln){
+            var sln = {{ \App\Models\Period::find($period[0]->id)->value('sln') }};
+            if (i <= sln) {
                 document.getElementById(i).hidden = false;
-                i ++;
+                i++;
             }
         });
     </script>
