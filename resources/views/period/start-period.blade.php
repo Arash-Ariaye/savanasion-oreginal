@@ -44,7 +44,7 @@
                                 </div>
                                 @error('tarikh_start') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="col-md-5 p-2">
+                            <div class="col-lg-5 p-2">
                                 <label class="control-label">دسته بندی</label>
                                 <select name="cat_start" style="text-align: left; direction: ltr;"
                                         class="form-control">
@@ -58,7 +58,7 @@
                                 </select>
                                 @error('category') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="col-md-2 p-2">
+                            <div class="col-lg-2 p-2">
                                 <label  class="control-label">تعداد سالن</label>
                                 <select id="sln" name="sln" style="text-align: left; direction: ltr;"
                                         class="form-control">
@@ -75,8 +75,8 @@
                                 @error('sln') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-md-3">
+                        <div class="row mt-5">
+                            <div class="form-group col-lg-3 col-md-12">
                                 <label class="col-form-label">
                                     مرغدار:
                                 </label>
@@ -91,7 +91,7 @@
                                 </select>
                                 @error('breeder') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-lg-3 col-md-12">
                                 <label class="col-form-label">
                                     دکتر دامپزشک:
                                 </label>
@@ -107,7 +107,7 @@
                                 </select>
                                 @error('dr') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-lg-3 col-md-12">
                                 <label class="col-form-label">
                                     کارشناس پرورش:
                                 </label>
@@ -123,8 +123,8 @@
                                 </select>
                                 @error('expert') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="col-lg-4 col-form-label">
+                            <div class="form-group col-lg-3 col-md-12 ">
+                                <label class="col-lg-12 col-form-label">
                                     نوع بستر:
                                 </label>
                                 <div class="col-lg-8">
@@ -134,9 +134,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                        <div class="row mt-5">
+                            <div class="form-group col-lg-4 col-md-12">
+                                <label class="col-lg-12 col-form-label">
                                     تعداد جوجه ریزی: </label>
                                 <div class="col-lg-8">
                                     <input type="number" required class="form-control" value="{{ old('t_joje') }}"
@@ -144,8 +144,8 @@
                                     @error('t_joje') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                            <div class="form-group col-lg-4 col-md-12">
+                                <label class="col-lg-12 col-form-label">
                                     وزن جوجه اولیه: </label>
                                 <div class="col-lg-8">
                                     <input type="number" required class="form-control" value="{{ old('v_joje') }}"
@@ -153,8 +153,8 @@
                                     @error('v_joje') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                            <div class="form-group col-lg-4 col-md-12">
+                                <label class="col-lg-12 col-form-label">
                                     جوجه کشی: </label>
                                 <div class="col-lg-8">
                                     <input type="text" required class="form-control" value="{{ old('joje_keshi') }}"
@@ -164,8 +164,8 @@
                             </div>
 
                         </div>
-                        <div class="row">
-                            <div class="form-group col-md-3">
+                        <div class="row mt-5">
+                            <div class="form-group col-lg-3 col-md-12">
                                 <label class="col-form-label">
                                     سویه:
                                 </label>
@@ -183,8 +183,8 @@
                                 </select>
                                 @error('soye') <span class="text-danger"> {{ $message }}</span> @enderror
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                            <div class="form-group col-lg-4 col-md-12">
+                                <label class="col-lg-12 col-form-label">
                                     مزرعه مرغ مادر: </label>
                                 <div class="col-lg-8">
                                     <input type="text" required class="form-control" value="{{ old('farm_madar') }}"
@@ -192,8 +192,8 @@
                                     @error('farm_madar') <span class="text-danger"> {{ $message }}</span> @enderror
                                 </div>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label class="col-lg-4 col-form-label">
+                            <div class="form-group col-lg-4 col-md-12">
+                                <label class="col-lg-12 col-form-label">
                                     سن گله مادر: </label>
                                 <div class="col-lg-8">
                                     <input type="number" required class="form-control"
