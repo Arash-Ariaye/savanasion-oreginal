@@ -43,8 +43,8 @@
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox ml-1">
                                                 <input class="custom-control-input" type="checkbox" name="remember" id="remember"
-                                                    {{ old('remember') ? 'checked' : '' }}>
-                                                <label class="custom-control-label" for="basic_checkbox_1">مرا به خاطر
+                                                    {{ old('remember') ? 'checked' : '' }} value="true">
+                                                <label class="custom-control-label" for="remember">مرا به خاطر
                                                     بسپار</label>
                                             </div>
                                         </div>
