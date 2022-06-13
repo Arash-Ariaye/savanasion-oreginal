@@ -255,6 +255,7 @@ class PeriodController extends Controller
             'title' => 'گزارش گیری از دوره',
             'period' => $period,
             'dailyReports' => $d_R,
+            'gsht' => $d_R->sum('bw'),
             'zaribMandegari' => $d_R->sum('t_send_koshtargah') / $period[0]->t_joje * 100,
             'aveBw' => (new Help)->aveBw($dReports, (int)$period[0]->t_joje),
             'aveDay' => (new Help)->aveDay($dReports, (int)$period[0]->t_joje),
@@ -288,9 +289,9 @@ class PeriodController extends Controller
         ];
         $data['liveAbility'] = 100 - round($data['tTalafat'] / $period[0]->t_joje * 100, 2);
         if (!is_null($period['0']->dan)){
-            $data['fcr'] = round($data['danMasrafi'] / (int)$period[0]->dan , 3);
-            $data['fcrc'] = round($data['danMasrafi'] / ((int)$period[0]->dan + $data['vTalafat']) , 3);
-            $data['epef'] = round(($data['liveAbility'] * (int)$period[0]->dan * 100) / ($data['aveDay'] * $data['fcrc']) , 2);
+            $data['fcr'] = round($data['danMasrafi'] / (int)$data['gsht'] , 3);
+            $data['fcrc'] = round($data['danMasrafi'] / ((int)$data['gsht'] + $data['vTalafat']) , 3);
+            $data['epef'] = round($data['liveAbility'] * $data['aveBw'] * 100 / ((int)$data['aveDay'] * $data['fcrc'] ), 2);
         }
         return view('period.report-period', $data);
     }

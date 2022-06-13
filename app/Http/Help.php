@@ -18,7 +18,8 @@ class Help
         } else {
             $report = new DateTime(Verta());
         }
-        return $period->diff($report)->days;
+        $return = $period->diff($report)->days;
+        return $return;
     }
 
 
@@ -46,5 +47,9 @@ class Help
         }
 
         return round($sum, 1);
+    }
+    public function gsht($s1, $s2, $s3, $s4, $s5, $s6){
+        $sumTalafat = $s1 + $s2 + $s3 + $s4 + $s5 + $s6;
+        return $sumTalafat;
     }
 }

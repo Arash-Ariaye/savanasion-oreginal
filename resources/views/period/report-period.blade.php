@@ -55,15 +55,15 @@
                         @if(!is_null($period[0]->dan))
                             <li class="list-group-item d-flex px-0 justify-content-between">
                                 <strong>FCR:</strong>
-                                <span class="mb-0"> {{ $fcr }}%</span>
+                                <span class="mb-0"> {{ $fcr }}</span>
                             </li>
                             <li class="list-group-item d-flex px-0 justify-content-between">
                                 <strong>FCRc:</strong>
-                                <span class="mb-0"> {{ $fcrc }}%</span>
+                                <span class="mb-0"> {{ $fcrc }}</span>
                             </li>
                             <li class="list-group-item d-flex px-0 justify-content-between">
                                 <strong>EPEF:</strong>
-                                <span class="mb-0"> {{ $epef }}%</span>
+                                <span class="mb-0"> {{ $epef }}</span>
                             </li>
                         @endif
                     </ul>

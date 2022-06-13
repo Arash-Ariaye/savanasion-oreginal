@@ -599,11 +599,11 @@
                             <div class="card-body">
                                 <div class="form-validation">
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-6">
+                                        <div class="form-group col-lg-4">
                                             <label class="col-lg-12 col-form-label">
                                                 تعداد مرغ ارسالی به کشتارگاه:
                                             </label>
-                                            <div class="col-lg-4 col-md-12">
+                                            <div class="col-lg-12 col-md-12">
                                                 <input type="text" class="form-control"
                                                           value="{{ old('t_send_koshtargah') }}"
                                                           name="t_send_koshtargah">
@@ -615,7 +615,7 @@
                                             <label class="col-lg-12 col-form-label">
                                                  وزن ارسالی به کشتارگاه:
                                             </label>
-                                            <div class="col-lg-6 col-md-12">
+                                            <div class="col-lg-12 col-md-12">
                                                 <input type="text" class="form-control"
                                                           name="bw" value="{{ old('bw') }}">
                                                 @error('bw') <span
@@ -626,7 +626,7 @@
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن ارسالی به کشتارگاه:
                                             </label>
-                                            <div class="col-lg-6 col-md-12">
+                                            <div class="col-lg-12 col-md-12">
                                                 <input type="text" class="form-control"
                                                           name="avr_v_koshtar" value="{{ old('avr_v_koshtar') }}">
                                                 @error('avr_v_koshtar') <span

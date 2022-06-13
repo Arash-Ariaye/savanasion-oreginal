@@ -624,7 +624,7 @@
                                             </label>
                                             <div class="col-lg-6 col-md-12">
                                                 <input type="text" class="form-control"
-                                                       name="bw" value="{{ old('bw') ?? $report->avr_v_koshtar}}">
+                                                       name="bw" value="{{ old('bw') ?? $report->bw}}">
                                                 @error('bw') <span
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>

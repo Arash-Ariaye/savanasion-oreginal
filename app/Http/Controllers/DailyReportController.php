@@ -8,16 +8,23 @@ use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Help;
+use Hekmatinasser\Verta\Verta;
 
 class DailyReportController extends Controller
 {
-
-    public function index()
+    public function index($tarikh_start = null, $breeder = null)
     {
-        $data = [
-            'title' => 'گزارشات روزانه',
-            'dailyReport' => DailyReport::all(),
-        ];
+        if (!is_null($tarikh_start) and !is_null($breeder)){
+            $data = [
+                'title' => 'گزارشات روزانه',
+                'dailyReport' => DailyReport::where('period_date', $tarikh_start)->where('breeder', $breeder)->orderBy('id', 'desc')->get(),
+            ];
+        }else{
+            $data = [
+                'title' => 'گزارشات روزانه',
+                'dailyReport' => DailyReport::orderBy('id', 'desc')->get(),
+            ];
+        }
 
         return view('dailyreport.daily-reports', $data);
     }
@@ -68,6 +75,7 @@ class DailyReportController extends Controller
             'vaksan' => 'nullable',
             'avr_v_koshtar' => 'nullable|numeric',
             't_send_koshtargah' => 'nullable|numeric',
+            'bw' => 'nullable|numeric',
             'description' => 'nullable',
 
             'type_Sickness' => 'nullable',
@@ -105,7 +113,7 @@ class DailyReportController extends Controller
         else:
             $data = [
                 'title' => 'افزودن گزارش روزانه',
-                'breeder' => Period::where('status', 1)->get(),
+                'breeder' => Period::where('status', 1)->orderBy('id', 'desc')->get(),
             ];
         endif;
 
@@ -180,6 +188,7 @@ class DailyReportController extends Controller
             'vaksan' => 'nullable',
             'avr_v_koshtar' => 'nullable|numeric',
             't_send_koshtargah' => 'nullable|numeric',
+            'bw' => 'nullable|numeric',
             'description' => 'nullable',
 
             'type_Sickness' => 'nullable',
@@ -192,11 +201,8 @@ class DailyReportController extends Controller
             '*.numeric' => 'فقط عدد وارد کنید'
         ]);
         $check['period_date'] = DB::table('periods')->where('breeder', $request['breeder'])->where('status', 1)->value('tarikh_start');
-        $report = new DateTime($check['period_date']);
-        $period = new DateTime($check['tarikh']);
 
-        $check['age'] = $period->diff($report)->days;
-
+        $check['age'] = (new \App\Http\Help)->age($check['period_date'], $check['tarikh']);
         try {
             $dailyReport->update($check);
             toastr()->success('گزارش باموفقت ویرایش شد');

@@ -134,6 +134,8 @@
                                                 <a class="dropdown-item"
                                                    href="{{ route('report-period', [$item->tarikh_start, $item->breeder]) }}">نمایش گزارش</a>
                                                 <a class="dropdown-item"
+                                                   href="{{ route('daily-reports', [$item->tarikh_start, $item->breeder]) }}">گزارشات این دوره</a>
+                                                <a class="dropdown-item"
                                                    href="{{ route('add-daily-report', $item->id) }}">ثبت گزارش</a>
                                                 <a class="dropdown-item"
                                                    href="{{ route('edit-start-period', $item->id) }}">ویرایش شروع

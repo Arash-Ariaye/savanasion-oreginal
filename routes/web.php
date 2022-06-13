@@ -103,7 +103,7 @@ Route::delete('destroy-period/{period}', [PeriodController::class, 'destroy'])->
 
 //گزارش روزانه------------------------------//
 Route::delete('destroy-daily-report/{dailyReport}', [DailyReportController::class, 'destroy'])->name('destroy-daily-report')->middleware('auth');
-Route::get('daily-reports', [DailyReportController::class, 'index'])->name('daily-reports')->middleware('auth');
+Route::get('daily-reports/{tarikh_start?}/{breeder?}', [DailyReportController::class, 'index'])->name('daily-reports')->middleware('auth');
 Route::get('add-daily-report/{dailyReport?}', [DailyReportController::class, 'add'])->name('add-daily-report')->middleware('auth');
 Route::get('view-daily-report/{dailyReport}', [DailyReportController::class, 'show'])->name('view-daily-report')->middleware('auth');
 Route::get('edit-daily-report/{dailyReport}', [DailyReportController::class, 'edit'])->name('edit-daily-report')->middleware('auth');

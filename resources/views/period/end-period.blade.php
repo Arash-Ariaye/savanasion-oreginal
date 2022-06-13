@@ -96,7 +96,7 @@
                             </div>
                             <div class="form-group col-lg-4">
                                 <label class="col-lg-12 col-form-label">
-                                     وزن مرغ مرغ ته سالن:
+                                     وزن مرغ ته سالن:
                                 </label>
                                 <div class="col-lg-12">
                                     <input type="text" class="form-control" value="{{ old('v_morgh_tah_salon') }}"
@@ -113,7 +113,7 @@
                                 <div class="row mt-3">
                                     <div class="form-group col-lg-4">
                                         <label class="col-lg-12 col-form-label">
-                                            دان باقیمانده:
+                                            دان ارسالی:
                                         </label>
                                         <div class="col-lg-12">
                                             <input type="text" class="form-control" value="{{ old('dan') }}"
