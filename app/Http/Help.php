@@ -5,21 +5,21 @@ namespace App\Http;
 
 
 use DateTime;
+use Hekmatinasser\Verta\Verta;
 
 
 class Help
 {
     public function age($period, $report = null)
     {
-        $period = new DateTime($period);
+        $period = Verta::parse($period);
 
         if (!is_null($report)) {
-            $report = new DateTime($report);
+            $report = Verta::parse($report);
         } else {
-            $report = new DateTime(Verta());
+            $report = Verta::today();
         }
-        $return = $period->diff($report)->days;
-        return $return;
+        return $period->diffDays($report);
     }
 
 

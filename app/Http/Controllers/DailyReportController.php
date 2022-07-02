@@ -14,12 +14,12 @@ class DailyReportController extends Controller
 {
     public function index($tarikh_start = null, $breeder = null)
     {
-        if (!is_null($tarikh_start) and !is_null($breeder)){
+        if (!is_null($tarikh_start) and !is_null($breeder)) {
             $data = [
                 'title' => 'گزارشات روزانه',
                 'dailyReport' => DailyReport::where('period_date', $tarikh_start)->where('breeder', $breeder)->orderBy('id', 'desc')->get(),
             ];
-        }else{
+        } else {
             $data = [
                 'title' => 'گزارشات روزانه',
                 'dailyReport' => DailyReport::orderBy('id', 'desc')->get(),
