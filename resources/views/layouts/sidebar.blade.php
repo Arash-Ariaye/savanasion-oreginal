@@ -22,6 +22,7 @@
                 <ul aria-expanded="false">
                     <li><a href="{{ route('home') }}">خانه </a></li>
                     <li><a href="{{ route('category') }}">دسته بندی</a></li>
+                    <li><a href="{{ route('users') }}">مدیریت کاربران</a></li>
                 </ul>
             </li>
 

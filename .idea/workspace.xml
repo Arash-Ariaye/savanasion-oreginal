@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-23 01">
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-04-11 01">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Dr.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Expert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/upload/n.tahmasbi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/add-user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/edit-user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/user/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ChartMakeCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ChartMakeCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Help.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/AreaChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/AreaChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/BarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/BarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/DonutChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/DonutChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/HeatMapChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/HeatMapChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/HorizontalBarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/HorizontalBarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/LineChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/LineChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/PieChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/PieChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/PolarAreaChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/PolarAreaChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/RadarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/RadarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Default/RadialBarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Default/RadialBarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/AreaChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/AreaChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/BarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/BarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/DonutChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/DonutChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/HeatMapChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/HeatMapChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/HorizontalBarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/HorizontalBarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/LineChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/LineChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/PieChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/PieChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/PolarAreaChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/PolarAreaChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/RadarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/RadarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Json/RadialBarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Json/RadialBarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/AreaChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/AreaChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/BarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/BarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/DonutChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/DonutChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/HeatMapChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/HeatMapChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/HorizontalBarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/HorizontalBarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/LineChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/LineChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/PieChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/PieChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/PolarAreaChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/PolarAreaChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/RadarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/RadarChart.stub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stubs/charts/Vue/RadialBarChart.stub" beforeDir="false" afterPath="$PROJECT_DIR$/stubs/charts/Vue/RadialBarChart.stub" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +61,12 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="fbf613c6-dbc7-4c85-aa1d-9489ed0da29d" />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="e9053a50-2b10-4f26-b54f-4c32e29dd672" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -168,17 +204,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/css" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/bin/php/php8.1.0/php.exe&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\savanasion\public\assets\css" />
@@ -221,6 +264,12 @@
       <workItem from="1655013169355" duration="7168000" />
       <workItem from="1655096089618" duration="4493000" />
       <workItem from="1655102767865" duration="5430000" />
+      <workItem from="1655876269919" duration="80000" />
+      <workItem from="1655876361538" duration="35000" />
+      <workItem from="1655876588887" duration="26000" />
+      <workItem from="1656741093566" duration="1154000" />
+      <workItem from="1656743360802" duration="14503000" />
+      <workItem from="1656824954888" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -371,7 +420,8 @@
     <MESSAGE value="update 1400-03-22 01" />
     <MESSAGE value="update 1400-03-22 02" />
     <MESSAGE value="update 1400-03-23 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-03-23 01" />
+    <MESSAGE value="update 1400-04-11 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-04-11 01" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
