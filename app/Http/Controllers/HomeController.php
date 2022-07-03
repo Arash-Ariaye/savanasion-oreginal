@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Help;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Hekmatinasser\Verta\Verta;
 
 
 class HomeController extends Controller
