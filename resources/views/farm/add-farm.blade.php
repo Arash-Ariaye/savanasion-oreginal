@@ -387,50 +387,6 @@
 
 {{--جاوا اسکریپت های اضافی در این قسمت قرار گیرد--}}
 @section('js')
-    <!-- Toastr -->
-    <script src="{{ asset('assets/vendor/toastr/js/toastr.min.js') }}"></script>
 
-    @if(session()->has('success'))
-        <script>
-            toastr.success("{{ session('success') }}", "ذخیره شد", {
-                positionClass: "toast-top-left",
-                timeOut: 5e3,
-                closeButton: !0,
-                debug: !1,
-                newestOnTop: !0,
-                progressBar: !0,
-                preventDuplicates: !0,
-                onclick: null,
-                showDuration: "300",
-                hideDuration: "1000",
-                extendedTimeOut: "1000",
-                showEasing: "swing",
-                hideEasing: "linear",
-                showMethod: "fadeIn",
-                hideMethod: "fadeOut",
-                tapToDismiss: !1
-            });
-        </script>
-    @elseif(session()->has('fail'))
-        <script>
-            toastr.success("{{ session('success') }}", "ذخیره شد", {
-                positionClass: "toast-top-left",
-                timeOut: 5e3,
-                closeButton: !0,
-                debug: !1,
-                newestOnTop: !0,
-                progressBar: !0,
-                preventDuplicates: !0,
-                onclick: null,
-                showDuration: "300",
-                hideDuration: "1000",
-                extendedTimeOut: "1000",
-                showEasing: "swing",
-                hideEasing: "linear",
-                showMethod: "fadeIn",
-                hideMethod: "fadeOut",
-                tapToDismiss: !1
-            });
-        </script>
-    @endif
+
 @endsection

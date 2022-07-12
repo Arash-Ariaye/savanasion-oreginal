@@ -593,7 +593,7 @@
                         <div class="card-body">
                             <div class="form-validation">
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-lg-6">
+                                    <div class="form-group col-lg-3">
                                         <label class="col-lg-12 col-form-label">
                                             تعداد مرغ ارسالی به کشتارگاه:
                                         </label>
@@ -605,7 +605,7 @@
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
-                                    <div class="form-group col-lg-4 ">
+                                    <div class="form-group col-lg-3 ">
                                         <label class="col-lg-12 col-form-label">
                                             وزن ارسالی به کشتارگاه:
                                         </label>
@@ -616,7 +616,7 @@
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
-                                    <div class="form-group col-lg-6">
+                                    <div class="form-group col-lg-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن ارسالی به کشتارگاه:
                                         </label>
@@ -627,6 +627,19 @@
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">
+                                            ساعت قطع دان:
+                                        </label>
+                                        <div class="col-lg-6">
+                                            <input disabled type="time" class="form-control"
+                                                   value="{{ old('dan_stop_time') ?? $report->dan_stop_time}}"
+                                                   name="dan_stop_time">
+                                            @error('dan_stop_time') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="form-group col-lg-12">
                                     <label class="col-lg-12 col-form-label">

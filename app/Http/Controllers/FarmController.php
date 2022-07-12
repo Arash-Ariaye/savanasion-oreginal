@@ -116,6 +116,8 @@ class FarmController extends Controller
             'weighbridge' => 'required',
             'input_quarantine' => 'required',
             'fences' => 'required',
+            'metrazh' => 'required',
+
         ]);
         try {
             $farm->update([
@@ -142,6 +144,8 @@ class FarmController extends Controller
                 'weighbridge' => $request['weighbridge'],
                 'input_quarantine' => $request['input_quarantine'],
                 'fences' => collect($request['fences'])->implode('-'),
+                'metrazh' => $check['metrazh'],
+
             ]);
             toastr()->success('با موفقیت بروزرسانی شد.');
             return redirect()->route('farms');

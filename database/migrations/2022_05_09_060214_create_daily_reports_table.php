@@ -71,6 +71,9 @@ class CreateDailyReportsTable extends Migration
             $table->string('therapy')->nullable();
             $table->string('vitamin')->nullable();
             $table->string('age');
+            $table->string('dan_stop_time');
+
+            $table->string('expert');
             $table->string('tarikh');
 
             $table->timestamps();
