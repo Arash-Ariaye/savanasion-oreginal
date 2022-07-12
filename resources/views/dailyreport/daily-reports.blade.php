@@ -30,7 +30,7 @@
                                 <th>گزارش فارم</th>
                                 <th>تاریخ ثبت گزارش</th>
                                 <th>سن گله(روز)</th>
-                                <th>ثبت کننده گزارش</th>
+{{--                                <th>ثبت کننده گزارش</th>--}}
                                 <th>*</th>
                             </tr>
                             </thead>
@@ -39,7 +39,7 @@
                                 <tr>
                                     <td>{{ $item->breeder }}</td>
                                     <td>{{ $item->tarikh }}</td>
-                                    <td>{{ $item->expert }}</td>
+{{--                                    <td>{{ $item->expert }}</td>--}}
                                     <td>{{ $item->age }}</td>
                                     <td>
                                         <div class="dropdown ml-auto text-right">

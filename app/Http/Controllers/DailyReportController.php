@@ -6,6 +6,7 @@ use App\Models\DailyReport;
 use App\Models\Period;
 use DateTime;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Http\Help;
 use Hekmatinasser\Verta\Verta;
@@ -78,6 +79,7 @@ class DailyReportController extends Controller
             't_send_koshtargah' => 'nullable|numeric',
             'bw' => 'nullable|numeric',
             'description' => 'nullable',
+            'dan_stop_time' => 'nullable',
 
             'type_Sickness' => 'nullable',
             'medicines' => 'nullable',
@@ -89,10 +91,9 @@ class DailyReportController extends Controller
             '*.numeric' => 'فقط عدد وارد کنید'
         ]);
         $check['period_date'] = DB::table('periods')->where('breeder', $request['breeder'])->where('status', 1)->value('tarikh_start');
-        $report = new DateTime($check['period_date']);
-        $period = new DateTime($check['tarikh']);
 
-        $check['age'] = $period->diff($report)->days;
+        $check['age'] = Help::age($check['period_date'], $check['tarikh']);
+        $check['expert'] = Auth::user()->name;
         try {
             DailyReport::create($check);
             toastr()->success('گزارش باموفقت ثبت شد');
@@ -154,7 +155,7 @@ class DailyReportController extends Controller
             'dan_masrafi_s1' => 'nullable|numeric',
             'ave_vazn_s1' => 'nullable|numeric',
             'app_nori_s1' => 'nullable|numeric',
-
+            'dan_stop_time' => 'nullable',
             't_talafat_s2' => 'nullable|numeric',
             'v_talafat_s2' => 'nullable|numeric',
             'dan_masrafi_s2' => 'nullable|numeric',
@@ -192,7 +193,6 @@ class DailyReportController extends Controller
             't_send_koshtargah' => 'nullable|numeric',
             'bw' => 'nullable|numeric',
             'description' => 'nullable',
-
             'type_Sickness' => 'nullable',
             'medicines' => 'nullable',
             'therapy' => 'nullable',
@@ -205,6 +205,7 @@ class DailyReportController extends Controller
         $check['period_date'] = DB::table('periods')->where('breeder', $request['breeder'])->where('status', 1)->value('tarikh_start');
 
         $check['age'] = (new \App\Http\Help)->age($check['period_date'], $check['tarikh']);
+        $check['expert'] = Auth::user()->name;
         try {
             $dailyReport->update($check);
             toastr()->success('گزارش باموفقت ویرایش شد');
