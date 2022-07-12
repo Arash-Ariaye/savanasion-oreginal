@@ -10,7 +10,7 @@ use Hekmatinasser\Verta\Verta;
 
 class Help
 {
-    public function age($period, $report = null)
+    public static function age($period, $report = null)
     {
         $period = Verta::parse($period);
 

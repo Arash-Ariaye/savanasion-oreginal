@@ -40,6 +40,7 @@ class FarmController extends Controller
             "air_sys" => 'required',
             "form_area" => 'required',
             "cooling_sys" => 'required',
+            "metrazh" => 'required',
         ], [
             '*.required' => 'وارد کردن این مقدار الضامی می باشد.',
         ]);
@@ -68,6 +69,7 @@ class FarmController extends Controller
                 'weighbridge' => $request['weighbridge'],
                 'input_quarantine' => $request['input_quarantine'],
                 'fences' => collect($check['fences'])->implode('-'),
+                'metrazh' => $check['metrazh'],
 
             ]);
             toastr()->success('با موفقیت ذخیره شد!');
@@ -157,7 +159,7 @@ class FarmController extends Controller
             return redirect()->route('farms');
         } catch (\Exception $e) {
             toastr()->success($e, 'خطا در حذف!');
-            return redirect() - back();
+            return redirect()->back();
 
         }
 

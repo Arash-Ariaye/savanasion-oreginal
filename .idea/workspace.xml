@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-03-23 01">
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-04-12 02">
+      <change afterPath="$PROJECT_DIR$/savana.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PeriodController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FarmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FarmController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Help.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Help.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/end-period.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2022_02_09_130244_create_farms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_02_09_130244_create_farms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/farm/add-farm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/farm/add-farm.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +23,16 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="e9053a50-2b10-4f26-b54f-4c32e29dd672" />
+    <option name="defaultAccountId" value="f7fdb121-e15c-43c2-877d-da11d27c0267" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -169,14 +171,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/css" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -221,6 +217,12 @@
       <workItem from="1655013169355" duration="7168000" />
       <workItem from="1655096089618" duration="4493000" />
       <workItem from="1655102767865" duration="5430000" />
+      <workItem from="1657358524197" duration="4660000" />
+      <workItem from="1657603455602" duration="51000" />
+      <workItem from="1657603823021" duration="273000" />
+      <workItem from="1657604359263" duration="714000" />
+      <workItem from="1657605811419" duration="306000" />
+      <workItem from="1657606137576" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>

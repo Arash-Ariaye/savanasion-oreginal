@@ -35,6 +35,7 @@ class CreateFarmsTable extends Migration
             $table->string('weighbridge')->nullable();
             $table->string('input_quarantine')->nullable();
             $table->string('fences')->nullable();
+            $table->string('metrazh')->nullable();
             $table->timestamps();
         });
 

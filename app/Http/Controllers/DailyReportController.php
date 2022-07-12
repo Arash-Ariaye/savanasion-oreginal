@@ -12,6 +12,7 @@ use Hekmatinasser\Verta\Verta;
 
 class DailyReportController extends Controller
 {
+
     public function index($tarikh_start = null, $breeder = null)
     {
         if (!is_null($tarikh_start) and !is_null($breeder)) {
@@ -142,6 +143,7 @@ class DailyReportController extends Controller
         return view('dailyreport.edit-daily-report', $data);
     }
 
+
     public function update(Request $request, DailyReport $dailyReport)
     {
 
@@ -225,4 +227,6 @@ class DailyReportController extends Controller
             return redirect(route('daily-reports'));
         }
     }
+
+
 }
