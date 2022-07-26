@@ -66,12 +66,14 @@ class CreateDailyReportsTable extends Migration
             $table->string('avr_v_koshtar')->nullable();
             $table->string('t_send_koshtargah')->nullable();
             $table->string('description')->nullable();
+            $table->string('description2')->nullable();
             $table->string('type_Sickness')->nullable();
             $table->string('medicines')->nullable();
             $table->string('therapy')->nullable();
             $table->string('vitamin')->nullable();
             $table->string('age');
             $table->string('dan_stop_time');
+            $table->string('dan_cat');
 
             $table->string('expert');
             $table->string('tarikh');

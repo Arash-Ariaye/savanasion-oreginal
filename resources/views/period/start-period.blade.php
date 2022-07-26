@@ -229,7 +229,7 @@
                                             @if(old('sex_joje_s1'))
                                                 <option value="{{old('sex_joje_s1')}}">{{old('sex_joje_s1')}}</option>
                                             @else
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                             @endif
@@ -257,7 +257,7 @@
                                             @if(old('sex_joje_s2'))
                                                 <option value="{{old('sex_joje_s2')}}">{{old('sex_joje_s2')}}</option>
                                             @else
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                             @endif
@@ -286,7 +286,7 @@
                                             @if(old('sex_joje_s3'))
                                                 <option value="{{old('sex_joje_s3')}}">{{old('sex_joje_s3')}}</option>
                                             @else
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                             @endif
@@ -315,7 +315,7 @@
                                             @if(old('sex_joje_s4'))
                                                 <option value="{{old('sex_joje_s4')}}">{{old('sex_joje_s4')}}</option>
                                             @else
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                             @endif
@@ -343,7 +343,7 @@
                                             @if(old('sex_joje_s5'))
                                                 <option value="{{old('sex_joje_s5')}}">{{old('sex_joje_s5')}}</option>
                                             @else
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                             @endif
@@ -372,7 +372,7 @@
                                             @if(old('sex_joje_s6'))
                                                 <option value="{{old('sex_joje_s6')}}">{{old('sex_joje_s6')}}</option>
                                             @else
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                             @endif

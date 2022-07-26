@@ -96,7 +96,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
@@ -108,7 +108,21 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
+                                            <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                            <select name="dan_cat_s1" style="text-align: left; direction: ltr;"
+                                                    class="form-control col-lg-12">
+                                                @if(old('dan_cat_s1'))
+                                                    <option value="{{old('dan_cat_s1')}}">{{old('dan_cat_s1')}}</option>
+                                                @endif
+                                                    <option value="سوپر استارتر">سوپر استارتر</option>
+                                                    <option value="پیش دان">پیش دان</option>
+                                                    <option value="میان دان">میان دان</option>
+                                                    <option value="پس دان">پس دان</option>
+                                            </select>
+                                            @error('dan_cat_s1') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
@@ -120,7 +134,7 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 برنامه خاموشی:
                                             </label>
@@ -172,7 +186,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
@@ -184,7 +198,22 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
+                                            <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                            <select name="dan_cat_s2" style="text-align: left; direction: ltr;"
+                                                    class="form-control col-lg-12">
+                                                @if(old('dan_cat_s2'))
+                                                    <option value="{{old('dan_cat_s2')}}">{{old('dan_cat_s2')}}</option>
+                                                @endif
+                                                <option value="سوپر استارتر">سوپر استارتر</option>
+                                                <option value="پیش دان">پیش دان</option>
+                                                <option value="میان دان">میان دان</option>
+                                                <option value="پس دان">پس دان</option>
+                                            </select>
+                                            @error('dan_cat_s2') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
@@ -248,7 +277,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
@@ -260,7 +289,22 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
+                                            <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                            <select name="dan_cat_s3" style="text-align: left; direction: ltr;"
+                                                    class="form-control col-lg-12">
+                                                @if(old('dan_cat_s3'))
+                                                    <option value="{{old('dan_cat_s3')}}">{{old('dan_cat_s3')}}</option>
+                                                @endif
+                                                <option value="سوپر استارتر">سوپر استارتر</option>
+                                                <option value="پیش دان">پیش دان</option>
+                                                <option value="میان دان">میان دان</option>
+                                                <option value="پس دان">پس دان</option>
+                                            </select>
+                                            @error('dan_cat_s3') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
@@ -324,7 +368,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
@@ -336,7 +380,22 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
+                                            <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                            <select name="dan_cat_s4" style="text-align: left; direction: ltr;"
+                                                    class="form-control col-lg-12">
+                                                @if(old('dan_cat_s4'))
+                                                    <option value="{{old('dan_cat_s4')}}">{{old('dan_cat_s4')}}</option>
+                                                @endif
+                                                <option value="سوپر استارتر">سوپر استارتر</option>
+                                                <option value="پیش دان">پیش دان</option>
+                                                <option value="میان دان">میان دان</option>
+                                                <option value="پس دان">پس دان</option>
+                                            </select>
+                                            @error('dan_cat_s4') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
@@ -400,7 +459,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
@@ -412,7 +471,22 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
+                                            <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                            <select name="dan_cat_s5" style="text-align: left; direction: ltr;"
+                                                    class="form-control col-lg-12">
+                                                @if(old('dan_cat_s5'))
+                                                    <option value="{{old('dan_cat_s5')}}">{{old('dan_cat_s5')}}</option>
+                                                @endif
+                                                <option value="سوپر استارتر">سوپر استارتر</option>
+                                                <option value="پیش دان">پیش دان</option>
+                                                <option value="میان دان">میان دان</option>
+                                                <option value="پس دان">پس دان</option>
+                                            </select>
+                                            @error('dan_cat_s5') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
@@ -476,7 +550,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-lg-12 mt-5">
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 دان مصرفی(کیلوگرم):
                                             </label>
@@ -488,7 +562,22 @@
                                                     class="text-danger"> {{ $message }}</span> @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group col-lg-4">
+                                        <div class="form-group col-lg-3">
+                                            <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                            <select name="dan_cat_s6" style="text-align: left; direction: ltr;"
+                                                    class="form-control col-lg-12">
+                                                @if(old('dan_cat_s6'))
+                                                    <option value="{{old('dan_cat_s6')}}">{{old('dan_cat_s6')}}</option>
+                                                @endif
+                                                <option value="سوپر استارتر">سوپر استارتر</option>
+                                                <option value="پیش دان">پیش دان</option>
+                                                <option value="میان دان">میان دان</option>
+                                                <option value="پس دان">پس دان</option>
+                                            </select>
+                                            @error('dan_cat_s6') <span class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+
+                                        <div class="form-group col-lg-3">
                                             <label class="col-lg-12 col-form-label">
                                                 میانگین وزن:
                                             </label>
@@ -513,6 +602,7 @@
                                                 @enderror
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -586,6 +676,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group col-lg-8">
+                                        <label class="col-lg-12 col-form-label">
+                                            توضیحات:
+                                        </label>
+                                        <div class="col-lg-12">
+                                                <textarea type="text" class="form-control" rows="6"
+                                                          name="description">{{ old('description1') }}</textarea>
+                                            @error('description') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -653,7 +754,7 @@
                                         </label>
                                         <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="6"
-                                                          name="description">{{ old('description') }}</textarea>
+                                                          name="description">{{ old('description2') }}</textarea>
                                             @error('description') <span
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>

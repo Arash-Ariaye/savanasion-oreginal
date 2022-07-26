@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-04-21 03">
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-04-22 04">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/savana.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2022_05_09_060214_create_daily_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_05_09_060214_create_daily_reports_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/401.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/401.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/403.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/403.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/404.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/419.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/419.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/429.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/429.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/500.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/500.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/period/edit-start-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/edit-start-period.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/period/start-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/start-period.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +39,9 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="f7fdb121-e15c-43c2-877d-da11d27c0267" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -224,7 +236,8 @@
       <workItem from="1657605811419" duration="306000" />
       <workItem from="1657606137576" duration="7699000" />
       <workItem from="1657623102580" duration="662000" />
-      <workItem from="1657686436068" duration="644000" />
+      <workItem from="1657686436068" duration="1267000" />
+      <workItem from="1658823742809" duration="3577000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -359,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657621276126</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update 1400-04-22 04">
+      <created>1657687101422</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657687101422</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +419,8 @@
     <MESSAGE value="update 1400-04-21 01" />
     <MESSAGE value="update 1400-04-21 02" />
     <MESSAGE value="update 1400-04-21 03" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-04-21 03" />
+    <MESSAGE value="update 1400-04-22 04" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-04-22 04" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

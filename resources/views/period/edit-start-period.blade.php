@@ -227,7 +227,7 @@
                                             <option
                                                 value="{{old('sex_joje_s1') ?? $period[0]->sex_joje_s1}}">{{old('sex_joje_s1') ?? $period[0]->sex_joje_s1}}</option>
 
-                                            <option value=""></option>
+                                            <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                         </select>
@@ -256,7 +256,7 @@
                                             <option
                                                 value="{{old('sex_joje_s2') ?? $period[0]->sex_joje_s2}}">{{old('sex_joje_s2') ?? $period[0]->sex_joje_s2}}</option>
 
-                                            <option value=""></option>
+                                            <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                         </select>
@@ -286,7 +286,7 @@
                                             <option
                                                 value="{{old('sex_joje_s3') ?? $period[0]->sex_joje_s3}}">{{old('sex_joje_s3') ?? $period[0]->sex_joje_s3}}</option>
 
-                                            <option value=""></option>
+                                            <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                         </select>
@@ -316,7 +316,7 @@
                                             <option
                                                 value="{{old('sex_joje_s4') ?? $period[0]->sex_joje_s4}}">{{old('sex_joje_s4') ?? $period[0]->sex_joje_s4}}</option>
 
-                                            <option value=""></option>
+                                            <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                         </select>
@@ -344,7 +344,7 @@
                                                 class="form-control">
                                             <option
                                                 value="{{old('sex_joje_s5') ?? $period[0]->sex_joje_s5}}">{{old('sex_joje_s5') ?? $period[0]->sex_joje_s5}}</option>
-                                                <option value=""></option>
+                                                <option value="مختلف">مختلف</option>
                                                 <option value="خروس">خروس</option>
                                                 <option value="مرغ">مرغ</option>
                                         </select>
@@ -374,8 +374,9 @@
                                             <option
                                                 value="{{old('sex_joje_s6') ?? $period[0]->sex_joje_s6}}">{{old('sex_joje_s6') ?? $period[0]->sex_joje_s6}}</option>
 
+                                            <option value="مختلف">مختلف</option>
                                             <option value="خروس">خروس</option>
-                                                <option value="مرغ">مرغ</option>
+                                            <option value="مرغ">مرغ</option>
                                         </select>
                                         @error('sex_joje_s6') <span class="text-danger"> {{ $message }}</span> @enderror
                                     </div>
