@@ -39,26 +39,37 @@ class CreateDailyReportsTable extends Migration
             $table->string('dan_masrafi_s1')->nullable();
             $table->string('ave_vazn_s1')->nullable();
             $table->string('app_nori_s1')->nullable();
+            $table->string('dan_cat_s1')->nullable();
+
 
             $table->string('dan_masrafi_s2')->nullable();
             $table->string('ave_vazn_s2')->nullable();
             $table->string('app_nori_s2')->nullable();
+            $table->string('dan_cat_s2')->nullable();
+
 
             $table->string('dan_masrafi_s3')->nullable();
             $table->string('ave_vazn_s3')->nullable();
             $table->string('app_nori_s3')->nullable();
+            $table->string('dan_cat_s3')->nullable();
+
 
             $table->string('dan_masrafi_s4')->nullable();
             $table->string('ave_vazn_s4')->nullable();
             $table->string('app_nori_s4')->nullable();
+            $table->string('dan_cat_s4')->nullable();
+
 
             $table->string('dan_masrafi_s5')->nullable();
             $table->string('ave_vazn_s5')->nullable();
             $table->string('app_nori_s5')->nullable();
+            $table->string('dan_cat_s5')->nullable();
+
 
             $table->string('dan_masrafi_s6')->nullable();
             $table->string('ave_vazn_s6')->nullable();
             $table->string('app_nori_s6')->nullable();
+            $table->string('dan_cat_s6')->nullable();
 
 
             $table->string('daro')->nullable();
@@ -73,7 +84,6 @@ class CreateDailyReportsTable extends Migration
             $table->string('vitamin')->nullable();
             $table->string('age');
             $table->string('dan_stop_time');
-            $table->string('dan_cat');
 
             $table->string('expert');
             $table->string('tarikh');

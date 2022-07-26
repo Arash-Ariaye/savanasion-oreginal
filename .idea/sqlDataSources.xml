@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="ff85a278-67f7-4638-aa97-0621b5be8dcb" />
+          <option name="name" value="savanasion" />
+          <option name="urls">
+            <array>
+              <option value="file://$USER_HOME$/Downloads/savanasion.sql" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
