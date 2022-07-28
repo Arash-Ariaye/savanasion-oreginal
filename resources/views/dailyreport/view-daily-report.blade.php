@@ -32,21 +32,17 @@
                                                 <i class="fa fa-calendar"></i>
                                             </span>
                                 </div>
-                                <input disabled name="tarikh" value="{{$report->tarikh}}"
+                                <input disabled  value="{{$report->tarikh}}"
                                        class=" form-control"
                                        style="text-align: left; direction: ltr;">
-                            </div>
-                            @error('tarikh_start') <span class="text-danger"> {{ $message }}</span> @enderror
-                        </div>
+                            </div></div>
                         <div class="col-md-4 p-2">
                             <label class="col-lg-12 col-form-label">دوره مرغدار:</label>
-                            <select disabled name="breeder" style="text-align: left; direction: ltr;"
+                            <select disabled  style="text-align: left; direction: ltr;"
                                     class="form-control col-lg-8">
                                 <option
                                     value="{{old('breeder') ?? $report->breeder}}">{{old('breeder') ?? $report->breeder}}</option>
-                            </select>
-                            @error('breeder') <span class="text-danger"> {{ $message }}</span> @enderror
-                        </div>
+                            </select></div>
                     </div>
 
                     {{--                        سالن 1--}}
@@ -64,9 +60,7 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('t_talafat_s1') ?? $report->t_talafat_s1}}"
-                                                   disabled name="t_talafat_s1">
-                                            @error('t_talafat_s1') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
@@ -77,49 +71,47 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('v_talafat_s1') ?? $report->v_talafat_s1}}"
-                                                   disabled name="v_talafat_s1">
-                                            @error('v_talafat_s1') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             دان مصرفی(کیلوگرم):
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('dan_masrafi_s1') ?? $report->dan_masrafi_s1}}"
-                                                   disabled name="dan_masrafi_s1">
-                                            @error('dan_masrafi_s1') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                        <select name="dan_cat_s6" style="text-align: left; direction: ltr;"
+                                                class="form-control col-lg-12">
+                                            <option>{{$report->dan_cat_s1}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('ave_vazn_s1') ?? $report->ave_vazn_s1}}"
-                                                   disabled name="ave_vazn_s1">
-                                            @error('ave_vazn_s1') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             برنامه خاموشی:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('app_nori_s1') ?? $report->app_nori_s1}}"
-                                                   disabled name="app_nori_s1">
-                                            @error('app_nori_s1')
-                                            <span class="text-danger"> {{ $message }}</span>
-                                            @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
@@ -142,9 +134,7 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('t_talafat_s2') ?? $report->t_talafat_s2}}"
-                                                   disabled name="t_talafat_s2">
-                                            @error('t_talafat_s2') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
@@ -155,49 +145,47 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('v_talafat_s2') ?? $report->v_talafat_s2}}"
-                                                   disabled name="v_talafat_s2">
-                                            @error('v_talafat_s2') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             دان مصرفی(کیلوگرم):
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('dan_masrafi_s2') ?? $report->dan_masrafi_s2}}"
-                                                   disabled name="dan_masrafi_s2">
-                                            @error('dan_masrafi_s2') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                        <select style="text-align: left; direction: ltr;"
+                                                class="form-control col-lg-12">
+                                            <option>{{$report->dan_cat_s2}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('ave_vazn_s2') ?? $report->ave_vazn_s2}}"
-                                                   disabled name="ave_vazn_s2">
-                                            @error('ave_vazn_s2') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             برنامه خاموشی:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('app_nori_s2') ?? $report->app_nori_s2}}"
-                                                   disabled name="app_nori_s2">
-                                            @error('app_nori_s2')
-                                            <span class="text-danger"> {{ $message }}</span>
-                                            @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
@@ -220,9 +208,7 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('t_talafat_s3') ?? $report->t_talafat_s3}}"
-                                                   disabled name="t_talafat_s3">
-                                            @error('t_talafat_s3') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
@@ -233,49 +219,47 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('v_talafat_s3') ?? $report->v_talafat_s3}}"
-                                                   disabled name="v_talafat_s3">
-                                            @error('v_talafat_s3') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             دان مصرفی(کیلوگرم):
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('dan_masrafi_s3') ?? $report->dan_masrafi_s3}}"
-                                                   disabled name="dan_masrafi_s3">
-                                            @error('dan_masrafi_s3') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                        <select style="text-align: left; direction: ltr;"
+                                                class="form-control col-lg-12">
+                                            <option>{{$report->dan_cat_s3}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('ave_vazn_s3') ?? $report->ave_vazn_s3}}"
-                                                   disabled name="ave_vazn_s3">
-                                            @error('ave_vazn_s3') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             برنامه خاموشی:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('app_nori_s3') ?? $report->app_nori_s3}}"
-                                                   disabled name="app_nori_s3">
-                                            @error('app_nori_s3')
-                                            <span class="text-danger"> {{ $message }}</span>
-                                            @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
@@ -298,9 +282,7 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('t_talafat_s4') ?? $report->t_talafat_s4}}"
-                                                   disabled name="t_talafat_s4">
-                                            @error('t_talafat_s4') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
@@ -311,48 +293,46 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('v_talafat_s4') ?? $report->v_talafat_s4}}"
-                                                   disabled name="v_talafat_s4">
-                                            @error('v_talafat_s4') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             دان مصرفی(کیلوگرم):
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('dan_masrafi_s4') ?? $report->dan_masrafi_s4}}"
-                                                   disabled name="dan_masrafi_s4">
-                                            @error('dan_masrafi_s4') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                        <select style="text-align: left; direction: ltr;"
+                                                class="form-control col-lg-12">
+                                            <option>{{$report->dan_cat_s4}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('ave_vazn_s4') ?? $report->ave_vazn_s4}}"
-                                                   disabled name="ave_vazn_s4">
-                                            @error('ave_vazn_s4') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             برنامه خاموشی:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('app_nori_s4') ?? $report->app_nori_s4}}"
-                                                   disabled name="app_nori_s4">
-                                            @error('app_nori_s4')
-                                            <span class="text-danger"> {{ $message }}</span>
-                                            @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
@@ -375,9 +355,7 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('t_talafat_s5') ?? $report->t_talafat_s5}}"
-                                                   disabled name="t_talafat_s5">
-                                            @error('t_talafat_s5') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                     <div class="form-group col-md-3">
@@ -387,48 +365,46 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('v_talafat_s5') ?? $report->v_talafat_s5}}"
-                                                   disabled name="v_talafat_s5">
-                                            @error('v_talafat_s5') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             دان مصرفی(کیلوگرم):
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('dan_masrafi_s5') ?? $report->dan_masrafi_s5}}"
-                                                   disabled name="dan_masrafi_s5">
-                                            @error('dan_masrafi_s5') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                        <select  style="text-align: left; direction: ltr;"
+                                                class="form-control col-lg-12">
+                                            <option>{{$report->dan_cat_s5}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('ave_vazn_s5') ?? $report->ave_vazn_s5}}"
-                                                   disabled name="ave_vazn_s5">
-                                            @error('ave_vazn_s5') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             برنامه خاموشی:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('app_nori_s5') ?? $report->app_nori_s5}}"
-                                                   disabled name="app_nori_s5">
-                                            @error('app_nori_s5')
-                                            <span class="text-danger"> {{ $message }}</span>
-                                            @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
@@ -451,9 +427,7 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('t_talafat_s6') ?? $report->t_talafat_s6}}"
-                                                   disabled name="t_talafat_s6">
-                                            @error('t_talafat_s6') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
 
@@ -464,48 +438,46 @@
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('v_talafat_s6') ?? $report->v_talafat_s6}}"
-                                                   disabled name="v_talafat_s6">
-                                            @error('v_talafat_s6') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row col-lg-12 mt-5">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             دان مصرفی(کیلوگرم):
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('dan_masrafi_s6') ?? $report->dan_masrafi_s6}}"
-                                                   disabled name="dan_masrafi_s6">
-                                            @error('dan_masrafi_s6') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-lg-3">
+                                        <label class="col-lg-12 col-form-label">نوع دان مصرفی:</label>
+                                        <select  style="text-align: left; direction: ltr;"
+                                                class="form-control col-lg-12">
+                                                <option>{{$report->dan_cat_s6}}</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             میانگین وزن:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('ave_vazn_s6') ?? $report->ave_vazn_s6}}"
-                                                   disabled name="ave_vazn_s6">
-                                            @error('ave_vazn_s6') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   disabled >
                                         </div>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label class="col-lg-12 col-form-label">
                                             برنامه خاموشی:
                                         </label>
                                         <div class="col-lg-8">
                                             <input type="text" required class="form-control"
                                                    value="{{ old('app_nori_s6') ?? $report->app_nori_s6}}"
-                                                   disabled name="app_nori_s6">
-                                            @error('app_nori_s6')
-                                            <span class="text-danger"> {{ $message }}</span>
-                                            @enderror
+                                                   disabled >
                                         </div>
                                     </div>
                                 </div>
@@ -542,9 +514,7 @@
                                         <div class="col-lg-8">
                                                 <textarea type="text" required class="form-control" rows="2"
                                                           disabled
-                                                          name="type_Sickness">{{ old('type_Sickness') ?? $report->type_Sickness}}</textarea>
-                                            @error('type_Sickness') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                          >{{ old('type_Sickness') ?? $report->type_Sickness}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-3">
@@ -554,9 +524,7 @@
                                         <div class="col-lg-8">
                                                 <textarea type="text" required class="form-control" rows="3"
                                                           disabled
-                                                          name="medicines">{{ old('medicines') ?? $report->medicines}}</textarea>
-                                            @error('medicines') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                          >{{ old('medicines') ?? $report->medicines}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-3">
@@ -564,9 +532,7 @@
                                             واکسن:
                                         </label>
                                         <div class="col-lg-8">
-                                            <textarea type="text" rows="4" class="form-control" name="vaksan">{{ old('vaksan') ?? $report->vaksan}}</textarea>
-                                            @error('vaksan')
-                                            <span class="text-danger"> {{ $message }}</span> @enderror
+                                            <textarea type="text" rows="4" class="form-control" >{{ old('vaksan') ?? $report->vaksan}}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-3">
@@ -576,10 +542,17 @@
                                         <div class="col-lg-8">
                                                 <textarea type="text" required class="form-control" rows="4"
                                                           disabled
-                                                          name="vitamin">{{ old('vitamin') ?? $report->vitamin}}</textarea>
-                                            @error('vitamin') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                          >{{ old('vitamin') ?? $report->vitamin}}</textarea>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-8">
+                                    <label class="col-lg-12 col-form-label">
+                                        توضیحات:
+                                    </label>
+                                    <div class="col-lg-12">
+                                        <textarea type="text" class="form-control" rows="6"
+                                                  >{{ $report->description }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -600,9 +573,7 @@
                                         <div class="col-lg-6 col-md-12">
                                             <input disabled type="text" class="form-control"
                                                    value="{{ old('t_send_koshtargah') ?? $report->t_send_koshtargah}}"
-                                                   name="t_send_koshtargah">
-                                            @error('t_send_koshtargah') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   >
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-3 ">
@@ -611,9 +582,7 @@
                                         </label>
                                         <div class="col-lg-6 col-md-12">
                                             <input type="text" class="form-control"
-                                                   name="bw" value="{{$report->avr_v_koshtar}}">
-                                            @error('bw') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                    value="{{$report->avr_v_koshtar}}">
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-3">
@@ -622,9 +591,7 @@
                                         </label>
                                         <div class="col-lg-6 col-md-12">
                                             <input disabled type="text" class="form-control"
-                                                   name="avr_v_koshtar" value="{{ old('avr_v_koshtar') ?? $report->avr_v_koshtar}}">
-                                            @error('avr_v_koshtar') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                    value="{{ old('avr_v_koshtar') ?? $report->avr_v_koshtar}}">
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-3">
@@ -634,9 +601,7 @@
                                         <div class="col-lg-6">
                                             <input disabled type="time" class="form-control"
                                                    value="{{ old('dan_stop_time') ?? $report->dan_stop_time}}"
-                                                   name="dan_stop_time">
-                                            @error('dan_stop_time') <span
-                                                class="text-danger"> {{ $message }}</span> @enderror
+                                                   >
                                         </div>
                                     </div>
 
@@ -647,9 +612,7 @@
                                     </label>
                                     <div class="col-lg-12">
                                                 <textarea disabled type="text" class="form-control" rows="6"
-                                                          name="description">{{ old('description') ?? $report->description}}</textarea>
-                                        @error('description') <span
-                                            class="text-danger"> {{ $message }}</span> @enderror
+                                                          >{{ old('description2') ?? $report->description2}}</textarea>
                                     </div>
                                 </div>
                             </div>

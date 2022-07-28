@@ -36,6 +36,30 @@
                             <span class="mb-0"> {{ $period[0]->t_joje }} </span>
                         </li>
                         <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>نوع بستر:</strong>
+                            <span class="mb-0"> {{ $period[0]->bed }} </span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>وزن جوجه اولیه:</strong>
+                            <span class="mb-0"> {{ $period[0]->v_joje }} </span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>جوجه کشی:</strong>
+                            <span class="mb-0"> {{ $period[0]->joje_keshi }} </span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>سویه:</strong>
+                            <span class="mb-0"> {{ $period[0]->soye }} </span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>مزرعه مرغ مادر:</strong>
+                            <span class="mb-0"> {{ $period[0]->farm_madar }} </span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
+                            <strong>سن گله مادر:</strong>
+                            <span class="mb-0"> {{ $period[0]->sen_gale_madar }} </span>
+                        </li>
+                        <li class="list-group-item d-flex px-0 justify-content-between">
                             <strong>تعداد تلفات دوره:</strong>
                             <span class="mb-0"> {{ $tTalafat }} </span>
                         </li>

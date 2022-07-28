@@ -674,6 +674,17 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="form-group col-lg-8">
+                                        <label class="col-lg-12 col-form-label">
+                                            توضیحات:
+                                        </label>
+                                        <div class="col-lg-12">
+                                                <textarea type="text" class="form-control" rows="6"
+                                                          name="description">{{ old('description') ?? $report->description}}</textarea>
+                                            @error('description') <span
+                                                class="text-danger"> {{ $message }}</span> @enderror
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -742,8 +753,8 @@
                                         </label>
                                         <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="6"
-                                                          name="description">{{ old('description') ?? $report->description}}</textarea>
-                                            @error('description') <span
+                                                          name="description2">{{ old('description2') ?? $report->description2}}</textarea>
+                                            @error('description2') <span
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>

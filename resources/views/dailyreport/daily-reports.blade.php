@@ -9,7 +9,7 @@
 {{--جزیات صفحه در این سکشن قرار گیرد--}}
 @section('content')
     <div class="page-titles p-3">
-        <h4>مدیریت گزارشات روزانه</h4>
+        <h4>مدیریت گزارش‌های روزانه</h4>
         <ol class="breadcrumb mt-3">
             <li class="breadcrumb-item "><a href="javascript:void(0)">مدیریت گزارشات</a></li>
             <li class="breadcrumb-item active"><a href="javascript:void(0)">گزارشات روزانه</a></li>
@@ -20,7 +20,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">مدیریت گزارشات روزانه</h4>
+                    <h4 class="card-title">مدیریت گزارش‌های روزانه</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -28,9 +28,9 @@
                             <thead>
                             <tr>
                                 <th>گزارش فارم</th>
+                                <th>ثبت کننده گزارش</th>
                                 <th>تاریخ ثبت گزارش</th>
                                 <th>سن گله(روز)</th>
-{{--                                <th>ثبت کننده گزارش</th>--}}
                                 <th>*</th>
                             </tr>
                             </thead>
@@ -38,8 +38,8 @@
                             @foreach($dailyReport as $item)
                                 <tr>
                                     <td>{{ $item->breeder }}</td>
+                                    <td>{{ $item->expert }}</td>
                                     <td>{{ $item->tarikh }}</td>
-{{--                                    <td>{{ $item->expert }}</td>--}}
                                     <td>{{ $item->age }}</td>
                                     <td>
                                         <div class="dropdown ml-auto text-right">
@@ -71,6 +71,7 @@
                                     </td>
                                 </tr>
                             @endforeach
+
                             </tbody>
                         </table>
                     </div>

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-05-04 01">
+    <list default="true" id="255bc67c-73e5-47ca-a713-16771495eb0a" name="Changes" comment="update 1400-05-04 02">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_05_09_060214_create_daily_reports_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_05_09_060214_create_daily_reports_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/add-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/daily-reports.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/daily-reports.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/period/report-period.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,8 @@
     <option name="defaultAccountId" value="0c2e431d-75f2-41f0-86e3-ea743209901e" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/DailyReportController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/resources/views/dailyreport/view-daily-report.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/dailyreport/edit-daily-report.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -226,7 +235,8 @@
       <workItem from="1657606137576" duration="7699000" />
       <workItem from="1657623102580" duration="662000" />
       <workItem from="1657686436068" duration="1267000" />
-      <workItem from="1658823742809" duration="3750000" />
+      <workItem from="1658823742809" duration="3885000" />
+      <workItem from="1658982508215" duration="10257000" />
     </task>
     <task id="LOCAL-00001" summary="create-end-period">
       <created>1654583760014</created>
@@ -375,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658829664803</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update 1400-05-04 02">
+      <created>1658829901627</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1658829901627</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +434,8 @@
     <MESSAGE value="update 1400-04-21 03" />
     <MESSAGE value="update 1400-04-22 04" />
     <MESSAGE value="update 1400-05-04 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 1400-05-04 01" />
+    <MESSAGE value="update 1400-05-04 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1400-05-04 02" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

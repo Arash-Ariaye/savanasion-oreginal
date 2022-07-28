@@ -682,7 +682,7 @@
                                         </label>
                                         <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="6"
-                                                          name="description">{{ old('description1') }}</textarea>
+                                                          name="description">{{ old('description') }}</textarea>
                                             @error('description') <span
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
@@ -755,7 +755,7 @@
                                         <div class="col-lg-12">
                                                 <textarea type="text" class="form-control" rows="6"
                                                           name="description">{{ old('description2') }}</textarea>
-                                            @error('description') <span
+                                            @error('description2') <span
                                                 class="text-danger"> {{ $message }}</span> @enderror
                                         </div>
                                     </div>
